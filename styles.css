@@ -1,0 +1,50 @@
+/*Estrategia: Mobile Last*/
+
+*{
+    box-sizing: border-box;
+}
+
+
+header{
+background-color:blue;
+
+margin-bottom: -30px;
+}
+
+#logoHome{
+    width: 15%;
+}
+
+main{
+    background-color: gray;
+}
+
+footer{
+    background-color:black;
+}
+
+section{
+background-color: red;
+}
+
+article{
+background-color:yellow;
+margin:2%;
+}
+
+article img {
+    width: 50%;
+    height: 50%;
+}
+.contenedorArticulos{
+        display: flex;
+        flex-wrap: no-wrap;
+        flex-direction: row;
+        justify-content: space-between;
+}
+
+
+.contenedorImagen img{
+width: 100%;
+height: 100%;
+}
