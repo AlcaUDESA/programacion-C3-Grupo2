@@ -75,3 +75,10 @@ cursor:pointer;
     color:whitesmoke;
 
 }
+
+#logo-home{
+    display: flex;
+    align-self:auto;
+    width: 15%;
+    height: 10%;
+}
