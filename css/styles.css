@@ -2,7 +2,6 @@
 /*Estrategia: Mobile Last*/
 /*Estrategia: Mobile Last*/
 
-
 *{
     box-sizing: border-box;
     font-family: sans-serif;
@@ -19,7 +18,7 @@ h3{
 }
 
 header{
-background-color:red;
+background-color:gainsboro;
 margin: 0%;
 }
 
@@ -31,21 +30,16 @@ header h3{
     width: 15%;
 }
 
-main{
-    background-color:rgb(255, 61, 61);
-}
+
 
 main h2{
     margin:0;
     text-align: center;
 }
 
-section{
-background-color: gray;
-}
 
 article{
-background-color:blueviolet;
+background-color:gainsboro;
 margin:2%;
 }
 
@@ -58,7 +52,6 @@ article h3,p{
         flex-direction: row;
         justify-content: space-between;
 }
-
 
 .contenedorImagen img{
 width: 100%;
@@ -75,3 +68,10 @@ cursor:pointer;
     text-align: center;
 }
 
+.main-footer{
+    border-radius: 50px;
+    background-color: red;
+    font-weight: bold;
+    color:whitesmoke;
+
+}
