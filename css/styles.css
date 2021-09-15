@@ -1,6 +1,5 @@
-/*Estrategia: Mobile Last*/
-/*Estrategia: Mobile Last*/
-/*Estrategia: Mobile Last*/
+/* Estrategia: Mobile First*/
+
 
 * {
   box-sizing: border-box;
@@ -17,8 +16,105 @@ h3 {
 }
 
 header {
-  background-color: gainsboro;
+  background-color: rgb(0, 0, 0);
   margin: 0%;
+}
+
+header h3 {
+  text-align: center;
+}
+
+#logoHome {
+  width: 15%;
+}
+
+
+
+main h2 {
+  margin: 0;
+  text-align: center;
+}
+
+article {
+  margin: 2%;
+}
+
+article h3,
+p {
+  text-align: center;
+}
+.contenedorArticulos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.test{
+  width: 40%;
+}
+
+
+.contenedorImagen img {
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  border-radius: 10px;
+  box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
+}
+
+.subtitulo {
+  margin: 0 auto;
+  text-align: center;
+}
+
+.main-footer {
+  background-color: red;
+  font-weight: bold;
+  color: whitesmoke;
+}
+
+#logo-home {
+  display: flex;
+  align-self: auto;
+  width: 15%;
+  height: 10%;
+  cursor: pointer;
+}
+
+
+@media(min-width:256px){
+
+}
+
+@media(min-width:769px){
+  
+}
+
+
+
+
+
+/*
+* {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+  background-color: white;
+  margin: 0 auto;
+}
+
+h3 {
+  margin: 0;
+}
+
+header {
+  background-color: rgb(44, 44, 44);
+  margin: 0%;
+  border-radius: 0px 0px 20px 20px;
 }
 
 header h3 {
@@ -35,7 +131,7 @@ main h2 {
 }
 
 article {
-  background-color: gainsboro;
+  background-color: ;
   margin: 2%;
 }
 
@@ -78,3 +174,5 @@ p {
   height: 10%;
   cursor: pointer;
 }
+
+*/
