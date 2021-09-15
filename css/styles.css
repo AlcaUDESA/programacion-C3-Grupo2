@@ -8,7 +8,6 @@
 
 }
 
-
 body{
     background-color: whitesmoke;
     margin: 0 auto;
@@ -85,13 +84,11 @@ header{
     }
 
 
-
 /*
 *{
     box-sizing: border-box;
     font-family: sans-serif;
 }
-
 
 body{
     background-color: whitesmoke;
@@ -116,12 +113,10 @@ header h3{
 }
 
 
-
 main h2{
     margin:0;
     text-align: center;
 }
-
 
 article{
 background-color:gainsboro;
