@@ -4,7 +4,8 @@
 
 *{
     box-sizing: border-box;
-    font-family: sans-serif;
+    font-family: 'Open Sans', sans-serif;
+
 }
 
 
@@ -15,6 +16,7 @@ body{
 
 h3{
     margin: 0;
+  
 }
 header{
     background-color:gainsboro;
@@ -40,6 +42,7 @@ header{
     article{
     background-color:gainsboro;
     margin:2%;
+    width: 40%;
     }
     
     article h3,p{
@@ -47,7 +50,7 @@ header{
         }
     .contenedorArticulos{
             display: flex;
-            flex-wrap: no-wrap;
+            flex-wrap: wrap;
             flex-direction: row;
             justify-content: space-between;
            
@@ -55,12 +58,7 @@ header{
             width: 100%;
     }
 
-    /*.articulos {
-        display: flex;
-        height: 20vh;
-        width: 20vh;  
-    }
-    */
+    
     
     .contenedorImagen img{
     width: 100%;
@@ -166,10 +164,21 @@ cursor:pointer;
 
 @media (min-width: 768px) {
     /*tablet*/
+    article{
+        background-color:gainsboro;
+        margin:1%;
+        width: 35%;
+        }
 
 }
 @media (min-width: 1024px) {
     /*desktop*/
+    article{
+        background-color:gainsboro;
+        margin:1%;
+        width: 15%;
+        }
+    
 
 }
 
