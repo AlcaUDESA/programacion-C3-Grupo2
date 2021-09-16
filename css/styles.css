@@ -38,7 +38,7 @@ main h2 {
 
 article {
   margin: 2%;
-  background-color: red;
+  
 }
 
 article h3,
@@ -118,6 +118,7 @@ p {
   .articulosIndex{
     background-color: whitesmoke;
     width: 35%;
+    margin:0;
 
   }
 }
