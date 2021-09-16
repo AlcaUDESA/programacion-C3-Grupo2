@@ -24,9 +24,6 @@ header {
   margin: 0%;
 }
 
-header h3 {
-  text-align: center;
-}
 
 #logoHome {
   width: 15%;
@@ -41,7 +38,7 @@ header h3 {
   font-weight: 400;
 }
 
-article{
+.articulosIndex{
   margin: 2%;
 
 }
@@ -73,9 +70,10 @@ p {
 }
 
 .subtitulo {
-  margin: 0 auto;
+  margin: 20px;
   text-align: center;
-  border: 2px solid white;
+  padding: 20px;
+  
 }
 
 .main-footer {
@@ -121,15 +119,16 @@ p {
 
 @media(min-width:768px){
   .articulosIndex{
-    background-color: whitesmoke;
+    background-color: black;
+    color: white;
     width: 35%;
-
   }
 }
 
 @media(min-width:1024px){
   .articulosIndex{
-    background-color: whitesmoke;
+    background-color: black;
+    color: white;
     width: 15%;
   }
     }
