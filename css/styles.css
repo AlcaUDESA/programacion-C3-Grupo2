@@ -2,13 +2,107 @@
 /* Estrategia: Mobile First*/
 
 
+
+/* CSS INDEX-HOME */
+
 * {
   box-sizing: border-box;
   font-family: 'Open Sans', sans-serif;
 }
+ul{
+  padding: 0%;
+  margin: 0%;
+}
 
+li{
+  list-style-type: none;
+}
+a{
+  text-decoration: none;
+  color: whitesmoke;
+}
+
+
+header {
+  background-color: rgb(0, 0, 0);
+  margin: 0%;
+}
+
+
+.contenedorHeader{
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0%;
+  padding: 0%;
+}
+
+.logo{
+  width: 30%;
+  margin: 0%;
+ }
+
+ .logo img{
+   width: 90%;
+ }
+
+ .articulosDeNav{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   width: 70%;
+   margin: 0%;
+  
+ }
+ .articulosDeNav ul{
+   width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 5px;
+ }
+ .articulosDeNav li{
+  text-align: center;
+  width: 35%;
+ }
+.articulosDeNav a{
+  display: inline-block;
+  color: whitesmoke;
+  width: 90%;
+  text-transform: uppercase;
+  padding: 5px 0;
+}
+
+ 
+
+
+/*.barraDeNavegacion ul{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 15px;
+  
+}
+.barraDeNavegacion li{
+  text-align: center;
+  width: 15.25%;
+}
+.barraDeNavegacion a{
+  display: inline-block;
+  color: whitesmoke;
+  width: 100%;
+  text-transform: uppercase;
+  padding: 16px 0;
+}
+.barraDeNavegacion a:hover{
+  text-decoration: underline;
+}
+*/
 body {
-  background-color: whitesmoke;
+  background-image: linear-gradient(blue,black);
   margin: 0 auto;
 }
 
@@ -16,27 +110,20 @@ h3 {
   margin: 0;
 }
 
-header {
-  background-color: rgb(0, 0, 0);
-  margin: 0%;
-}
-
-header h3 {
-  text-align: center;
-}
-
-#logoHome {
-  width: 15%;
-}
 
 
 
-main h2 {
+
+
+
+#MainDelIndex h2 {
   margin: 0;
   text-align: center;
+  color: white;
+  font-weight: 400;
 }
 
-article {
+.articulosIndex{
   margin: 2%;
   
 }
@@ -52,45 +139,40 @@ p {
   justify-content: space-between;
 }
 
-.articulosIndex{
+.articulosIndex {
   width: 40%;
+  background-color: black;
+  color: white;
+  font-weight: 300;
+  border-radius: 7px;
 }
 
 
 .contenedorImagen img {
   width: 100%;
   height: 100%;
-  overflow: hidden;
-  border-radius: 10px;
-  box-shadow: 0px 15px 10px rgba(0, 0, 0, 0.5);
   cursor: pointer;
 }
 
 .subtitulo {
-  margin: 0 auto;
+  margin: 20px;
   text-align: center;
+  padding: 20px;
+  
 }
 
 .main-footer {
-  background-color: red;
+  background-color: black;
   font-weight: bold;
   color: whitesmoke;
 }
 
-#logo-home {
-  display: flex;
-  align-self: auto;
-  width: 15%;
-  height: 10%;
-  cursor: pointer;
-}
-    
+
     
     .contenedorImagen img{
     width: 100%;
     height: 100%;
     overflow: hidden;
-    border-radius: 10px;
     box-shadow: 0px 8px 3px rgba(0, 0, 0, 0.50);
     cursor:pointer;
     
@@ -103,7 +185,6 @@ p {
     }
     
     .main-footer{
-        border-radius: 20px;
         background-color: red;
         font-weight: bold;
         color:whitesmoke;
@@ -116,7 +197,8 @@ p {
 
 @media(min-width:768px){
   .articulosIndex{
-    background-color: whitesmoke;
+    background-color: black;
+    color: white;
     width: 35%;
     margin:0;
 
@@ -125,8 +207,54 @@ p {
 
 @media(min-width:1024px){
   .articulosIndex{
-    background-color: whitesmoke;
+    background-color: black;
+    color: white;
     width: 15%;
   }
+
+  .logo{
+    width: 30%;
+    margin: 0%;
+   }
+  
+   .logo img{
+     width: 30%;
+   }
+  
+   .articulosDeNav{
+     display: flex;
+     flex-wrap: wrap;
+     flex-direction: row;
+     width: 70%;
+     margin: 0%;
+    
+   }
+   .articulosDeNav ul{
+     width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+   }
+   .articulosDeNav li{
+    text-align: center;
+    width: 20%;
+   }
+  .articulosDeNav a{
+    display: inline-block;
+    color: whitesmoke;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 5px 0;
+  }
+  
+   
     }
+
+
+
+
+/* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
+
 
