@@ -19,6 +19,13 @@ h3 {
   margin: 0;
 }
 
+.h4Detalles{
+  margin: 10px;
+  text-align: left;
+  color: white;
+  font-weight: 100;
+}
+
 header {
   background-color: rgb(0, 0, 0);
   margin: 0%;
@@ -52,6 +59,14 @@ p {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.contenedorArticulosDetallesGenero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:space-between;
+  padding: 10px;
 }
 
 .articulosIndex {
@@ -130,6 +145,11 @@ p {
     background-color: black;
     color: white;
     width: 15%;
+  }
+  .contenedorArticulosDetallesGenero{
+    justify-content: flex-start;
+    padding: 10px;
+    
   }
     }
 
