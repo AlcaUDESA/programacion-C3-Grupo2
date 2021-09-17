@@ -19,6 +19,12 @@ a {
   color: whitesmoke;
 }
 
+.h4Detalles{
+  margin: 10px;
+  text-align: left;
+  color: white;
+  font-weight: 100;
+}
 
 /*HeaderIndex*/ 
 
@@ -46,6 +52,7 @@ header {
   width: 90%;
 }
 
+<<<<<<< HEAD
 .articulosDeNav {
   display: flex;
   flex-wrap: wrap;
@@ -55,6 +62,17 @@ header {
 }
 .articulosDeNav ul {
   width: 100%;
+=======
+ .articulosDeNav{
+   display: flex;
+   flex-wrap: wrap;
+   flex-direction: row;
+   width: 70%;
+   margin: 0%;
+  }
+ .articulosDeNav ul{
+   width: 100%;
+>>>>>>> e6a178d074ec9c21c7ab0dbc6f4656882c2cd78b
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
@@ -125,6 +143,14 @@ p {
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.contenedorArticulosDetallesGenero {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content:space-between;
+  padding: 10px;
 }
 
 .articulosIndex {
@@ -223,6 +249,21 @@ p {
     text-transform: uppercase;
     padding: 5px 0;
   }
+<<<<<<< HEAD
 }
+=======
+
+  .contenedorArticulosDetallesGenero{
+    justify-content: flex-start;
+    padding: 10px;
+    
+  }
+  
+   
+  }
+
+
+
+>>>>>>> e6a178d074ec9c21c7ab0dbc6f4656882c2cd78b
 
 /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
