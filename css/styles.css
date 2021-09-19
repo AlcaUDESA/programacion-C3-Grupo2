@@ -325,6 +325,8 @@ p {
 
 }
 
+
+
 .listadoIndex{
   text-align: center;
 
@@ -458,15 +460,44 @@ p {
 
 /*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*
 /*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*
-/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*
+/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*/
+
+
+.contenedorGenres{
+  display: flex;
+  flex-direction: column;
+}
+
+.articulosGenres{
+  padding: 5px;
+}
 
 
 
+@media (min-width: 1024px){
 
+  .contenedorGenres{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .articulosGenres{
+    padding: 25.5px;
+  }
+}
 
+@media (min-width: 768px) {
 
-
-
+  .contenedorGenres{
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .articulosGenres{
+    padding: 34px;
+  }
+ 
+}
 
 
 
