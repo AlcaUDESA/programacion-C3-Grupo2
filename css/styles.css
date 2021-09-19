@@ -574,13 +574,22 @@ p {
 /*¨CSS PARA FAVORITOS*//*¨CSS PARA FAVORITOS*//*¨CSS PARA FAVORITOS*/
 /*¨CSS PARA FAVORITOS*//*¨CSS PARA FAVORITOS*//*¨CSS PARA FAVORITOS*/
 
+.contenedorArticulosFavoritos{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
+}
 
 
 
-
-
-
-
+/*esto al desktop
+.contenedorArticulosFavoritos {
+  justify-content: flex-start;
+  padding: 10px;
+}
+*/
 
 
 
