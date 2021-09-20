@@ -12,17 +12,36 @@
 </head>
 <body>
     <header>
-        <img
-          id="logo-home"
-          src="./img/logo-home.png"
-          alt="Logo de la página principal"
-        />
-  
-        <!--Este es el menu de navegación hacia cualquiera de las paginas disponibles-->
-  
-        <!--Aqui estará el buscador/form-->
-    </header>
+        <div class="logoHome">
+            <a href="index.html"><img class="logo" src="./img/logo-home.png" alt="Logo" /></a>
+        </div>
 
+        <div id="segundoDiv">
+            <nav class="navegadorHeader">
+                <ul>
+                    <li >
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="detail-movie.html">Peliculas</a>
+                    </li>
+                    <li>
+                        <a href="detail-serie.html">Series</a>
+                    </li>
+                    <li>
+                        <a href="favorites.html">Favoritos</a>
+                    </li>
+                    <li>
+                        <a href="genres.html">Generos</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <form class="buscadorHeader">
+                <input id="buscadorHeaderInput" type="search" placeholder="Search..." />
+            </form>
+        </div>
+    </header>
     <main id="MainDelIndex">
         <h2 class="subtitulo">DRAMA</h2>
         <section>

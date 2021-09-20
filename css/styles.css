@@ -360,13 +360,60 @@ p {
 /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES *//* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
 /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES *//* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
 
+.sectionPelicula{
+  display: flex;
+}
 
 
+.imgPelicula{
+  width: 50%;
+}
+.imgPelicula img{
+  width: 80%;
+  margin: 5px;
+}
+
+.imgPelicula h3{
+  color: whitesmoke;
+  display: flex;
+  text-align: center;
+  margin-top: 40%;
+}
+
+.descripcionPelicula{
+  color: whitesmoke;
+  margin: 5px;
+}
 
 
-
-
-
+@media (min-width: 1024px){
+  .sectionPelicula{
+    display: flex;
+  }
+  
+  
+  .imgPelicula{
+    width: 50%;
+  }
+  .imgPelicula img{
+    width: 50%;
+    margin: 5px;
+  }
+  
+  .imgPelicula h3{
+    color: whitesmoke;
+    display: flex;
+    text-align: center;
+    margin-top: 40%;
+    font-weight: 100;
+  }
+  
+  .descripcionPelicula{
+    color: whitesmoke;
+    margin: 5px;
+  }
+   
+}
 
 
 
