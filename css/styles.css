@@ -405,7 +405,8 @@ p {
     display: flex;
     text-align: center;
     margin-top: 40%;
-    font-weight: 100;
+    font-size: 3em;
+    justify-content: center;
   }
   
   .descripcionPelicula{
