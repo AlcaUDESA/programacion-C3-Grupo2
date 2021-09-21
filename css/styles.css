@@ -98,12 +98,11 @@ p {
 }
 
 .articulosIndex {
-  width: 40%;
   background-color: black;
   color: white;
   font-weight: 300;
   border-radius: 7px;
-  margin: 2%;
+  margin: 5%;
   box-shadow: 5px 3px 20px 5px rgb(0 0 0);
 }
 
@@ -175,6 +174,13 @@ p {
   background-color: black;
 }
 
+
+.titularGeneros{
+  text-align: center;
+color: whitesmoke;
+font-weight: 300;
+}
+
 /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/
 /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/
 /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/
@@ -183,7 +189,7 @@ p {
 .contenedorArticulosFavoritos {
   display: flex;
   flex-wrap: wrap;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   padding: 10px;
 }
@@ -195,7 +201,9 @@ h1#favoritosTitular {
   font-weight: 300;
 }
 
-
+#sinResultados{
+  display: none;
+}
 
 
 
@@ -313,7 +321,10 @@ h1#favoritosTitular {
     padding: 34px;
   }
 
-
+  .contenedorArticulosFavoritos {
+    padding: 10px;
+    flex-direction: row;
+  }
 
 }
 
@@ -395,6 +406,8 @@ h1#favoritosTitular {
 
   .contenedorArticulosFavoritos {
     padding: 10px;
+    flex-direction: row;
   }
 
 }
+

@@ -16,9 +16,46 @@
     <title>Tesla Cine - Resultados de Búsqueda</title>
   </head>
 
-  <body>
-    
+<body>
+  <header>
+    <div class="logoHome">
+      <a href="index.html"
+        ><img class="logo" src="./img/logo-home.png" alt="Logo"
+      /></a>
+    </div>
 
+    <div id="segundoDiv">
+      <nav class="navegadorHeader">
+        <ul>
+          <li>
+            <a href="index.html">Home</a>
+          </li>
+          <li>
+            <a href="detail-movie.html">Peliculas</a>
+          </li>
+          <li>
+            <a href="detail-serie.html">Series</a>
+          </li>
+          <li>
+            <a href="favorites.html">Favoritos</a>
+          </li>
+          <li>
+            <a href="genres.html">Generos</a>
+          </li>
+        </ul>
+      </nav>
+
+      <form method="GET" class="buscadorHeader" action="./search-results.html">
+        <input id="buscadorHeaderInput" type="search" placeholder="Search..." />
+      </form>
+    </div>
+  </header>
+
+  <main id="MainDelIndex">
+    <h1>Estos son los resultados de tu búsqueda</h1>
+  <h3 id="sinResultados"">No hay datos coincidentes con tu búsqueda</h3>
+  </main>
+    
 
 
   </body>
