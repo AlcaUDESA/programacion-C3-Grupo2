@@ -156,6 +156,43 @@ p {
 /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */ /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
 
 
+.cajaPelicula{
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.articuloPelicula{
+  width: 35%;
+  margin: 5px;
+}
+.articuloPelicula img{
+  width: 90%;
+}
+
+.listaPelicula{
+  display: flex;
+  width: 60%;
+  color: whitesmoke;
+  
+}
+
+.listaPelicula ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.descripcionPelicula{
+  color: whitesmoke;
+  margin: 2px;
+}
+
+
+
+
+
+
+
 
 /*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*
 /*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*
