@@ -154,7 +154,31 @@ p {
 /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */ /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
 /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */ /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
 
-
+.cajaPelicula{
+  display: flex;
+  flex-wrap: wrap;
+}
+.articuloPelicula{
+  width: 35%;
+  margin: 5px;
+}
+.articuloPelicula img{
+  width: 90%;
+}
+.listaPelicula{
+  display: flex;
+  width: 60%;
+  color: whitesmoke;
+}
+.listaPelicula ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.descripcionPelicula{
+  color: whitesmoke;
+  margin: 2px;
+}
 
 /*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*
 /*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*
@@ -326,6 +350,10 @@ h1#favoritosTitular {
     flex-direction: row;
   }
 
+
+  .listaPelicula{
+    font-size: 50px;
+  }
 }
 
 /*Media Querie de Computador*/
@@ -408,6 +436,22 @@ h1#favoritosTitular {
     padding: 10px;
     flex-direction: row;
   }
+  .listaPelicula{
+    font-size: 50px;
+  }
+}
 
+
+
+
+#main-footerDos{
+  background-color: red;
+    font-weight: bold;
+    color: whitesmoke;
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    margin: 500px 0px 0px 0px;
 }
 
