@@ -32,7 +32,6 @@ a {
   font-weight: 100;
 }
 
-
 header {
   background-color: rgb(0, 0, 0);
   margin: 0%;
@@ -50,9 +49,9 @@ header {
   padding: 0%;
 }
 
-.LogoHome{
+.LogoHome {
   display: flex;
-  flex-wrap:wrap;
+  flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 }
@@ -60,13 +59,11 @@ header {
 .logo {
   width: 100%;
   margin: 0%;
-
 }
 
-.buscadorHeader{
+.buscadorHeader {
   padding: 20px;
 }
-
 
 h3 {
   margin: 0;
@@ -77,11 +74,9 @@ h3 {
   text-align: center;
   color: white;
   font-weight: 400;
+  margin: 20px;
 }
 
-.articulosIndex {
-  margin: 2%;
-}
 
 article h3,
 p {
@@ -108,6 +103,8 @@ p {
   color: white;
   font-weight: 300;
   border-radius: 7px;
+  margin: 2%;
+  box-shadow: 5px 3px 20px 5px rgb(0 0 0);
 }
 
 .contenedorImagen img {
@@ -120,13 +117,12 @@ p {
   margin: 20px;
   text-align: center;
   padding: 20px;
+  border: 2px solid red;
+  border-radius: 20px;
+  background-color: black;
 }
 
-.main-footer {
-  background-color: black;
-  font-weight: bold;
-  color: whitesmoke;
-}
+
 
 .contenedorImagen img {
   width: 100%;
@@ -136,22 +132,68 @@ p {
   cursor: pointer;
 }
 
-.subtitulo {
-  margin: 0 auto;
-  text-align: center;
-}
 
 .main-footer {
   background-color: red;
-  font-weight: bold;
-  color: whitesmoke;
+    font-weight: bold;
+    color: whitesmoke;
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+}
+
+.listadoIndex {
+  text-align: center;
+}
+
+.navegadorHeader ul li {
+  text-align: center;
+}
+
+/* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */ /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
+/* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */ /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
+/* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */ /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
+
+
+
+/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*
+/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*
+/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/
+
+.contenedorGenres{
+  display: flex;
+  flex-direction: column;
+}
+
+.articulosGenres{
+  padding: 5px;
+  border-radius:20px;
+  border: 2px solid red;
+  text-align: center;
+  margin: 20px;
+  background-color: black;
+}
+
+/*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/
+/*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/
+/*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/
+/*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/
+
+.contenedorArticulosFavoritos {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 
-
-
-
-
+h1#favoritosTitular {
+  text-align: center;
+  color:whitesmoke;
+  font-weight: 300;
+}
 
 
 
@@ -183,6 +225,8 @@ p {
 /*Media Querie de Tableta*/
 
 @media (min-width: 768px) {
+
+  /*pagina de index  version tablet*/
   .articulosIndex {
     background-color: black;
     color: white;
@@ -190,82 +234,94 @@ p {
     margin: 20px;
   }
 
-  header{
+  header {
     display: flex;
     flex-wrap: wrap;
     margin: 0%;
     background-color: black;
   }
 
-  .logoHome{
+  .logoHome {
     width: 30%;
     display: flex;
   }
 
-.logoHome a{
+  .logoHome a {
     display: flex;
     width: 100%;
     justify-content: center;
- }
+  }
 
- .logo{
-   width: 60%;
-   margin: 0%;
- }
+  .logo {
+    width: 60%;
+    margin: 0%;
+  }
 
- #segundoDiv{
-   display: flex;
-   flex-wrap: wrap;
-   flex-direction: column;
-   width: 70%;
- }
+  #segundoDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+  }
 
- nav.navegadorHeader{
-   margin: 5px 0px;
-   display: flex;
-   width: 100%;
- }
+  nav.navegadorHeader {
+    margin: 5px 0px;
+    display: flex;
+    width: 100%;
+  }
 
-.navegadorHeader ul{
-  padding: 0%;
-  margin: 0%;
-  display: inline;
+  .navegadorHeader ul {
+    padding: 0%;
+    margin: 0%;
+    display: inline;
+  }
+
+  .navegadorHeader ul li {
+    display: inline;
+    margin: 0px 7px;
+    list-style-type: none;
+    padding: 0;
+    font-size: medium;
+  }
+
+  .buscadorHeader {
+    display: flex;
+    margin: 15px 0px;
+    justify-content: center;
+  }
+
+  #buscadorHeaderInput {
+    width: 90%;
+  }
+
+  .contenedorArticulos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+  }
+
+
+   /*pagina de generos  version tablet*/
+  .contenedorGenres {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .articulosGenres {
+    padding: 34px;
+  }
+
+
+
 }
 
-.navegadorHeader ul li{
-  display: inline;
-  margin: 0px 7px;
-  list-style-type:none;
-  padding: 0;
-  font-size: medium;
-}
-
-
-.buscadorHeader{
-  display: flex; 
-  margin: 15px 0px;
-  justify-content: center;
- }
-
- #buscadorHeaderInput{width: 90%;
-}
-
-
-.contenedorArticulos {
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  margin: 10px;
-}
-
-
-}
-
-
-
+/*Media Querie de Computador*/
 
 @media (min-width: 1024px) {
+
+    /*pagina de index  version pc*/
   .articulosIndex {
     background-color: black;
     color: white;
@@ -309,375 +365,37 @@ p {
     padding: 10px;
   }
 
-
-  .navegadorHeader{
+  .navegadorHeader {
     display: flex;
     justify-content: center;
     margin: 20px;
     padding: 25px;
   }
-  
-  main{
-    margin:20px;
+
+  main {
+    margin: 20px;
   }
+
+  /*pagina de detalle de peliculas version pc*/
   
 
+  /*pagina de generos version pc*/
 
-}
-
-
-
-.listadoIndex{
-  text-align: center;
-
-}
-
-
-.navegadorHeader ul li{
-  text-align:center;
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* CSS PARA DETAIL-MOVIE Y DETAIL SERIES *//* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
-/* CSS PARA DETAIL-MOVIE Y DETAIL SERIES *//* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
-/* CSS PARA DETAIL-MOVIE Y DETAIL SERIES *//* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
-
-.sectionPelicula{
-  display: flex;
-}
-
-
-.imgPelicula{
-  width: 50%;
-}
-.imgPelicula img{
-  width: 80%;
-  margin: 5px;
-}
-
-.imgPelicula h3{
-  color: whitesmoke;
-  display: flex;
-  text-align: center;
-  margin-top: 40%;
-}
-
-.descripcionPelicula{
-  color: whitesmoke;
-  margin: 5px;
-}
-
-
-@media (min-width: 1024px){
-  .sectionPelicula{
-    display: flex;
-  }
-  
-  
-  .imgPelicula{
-    width: 50%;
-  }
-  .imgPelicula img{
-    width: 50%;
-    margin: 5px;
-  }
-  
-  .imgPelicula h3{
-    color: whitesmoke;
-    display: flex;
-    text-align: center;
-    margin-top: 40%;
-    font-weight: 100;
-  }
-  
-  .descripcionPelicula{
-    color: whitesmoke;
-    margin: 5px;
-  }
-   
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*
-/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*
-/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*//*¨/*CSS PARA GENEROS*/
-
-
-.contenedorGenres{
-  display: flex;
-  flex-direction: column;
-}
-
-.articulosGenres{
-  padding: 5px;
-}
-
-
-
-@media (min-width: 1024px){
-
-  .contenedorGenres{
+  .contenedorGenres {
     display: flex;
     flex-direction: column;
   }
-  
-  .articulosGenres{
+
+  .articulosGenres {
     padding: 25.5px;
   }
-}
 
-@media (min-width: 768px) {
 
-  .contenedorGenres{
-    display: flex;
-    flex-direction: column;
+
+  /*pagina de favoritos version pc*/
+
+  .contenedorArticulosFavoritos {
+    padding: 10px;
   }
-  
-  .articulosGenres{
-    padding: 34px;
-  }
- 
+
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*¨CSS PARA FAVORITOS*//*¨CSS PARA FAVORITOS*//*¨CSS PARA FAVORITOS*/
-/*¨CSS PARA FAVORITOS*//*¨CSS PARA FAVORITOS*//*¨CSS PARA FAVORITOS*/
-/*¨CSS PARA FAVORITOS*//*¨CSS PARA FAVORITOS*//*¨CSS PARA FAVORITOS*/
-/*¨CSS PARA FAVORITOS*//*¨CSS PARA FAVORITOS*//*¨CSS PARA FAVORITOS*/
-
-.contenedorArticulosFavoritos{
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: space-between;
-  padding: 10px;
-}
-
-
-
-/*esto al desktop
-.contenedorArticulosFavoritos {
-  justify-content: flex-start;
-  padding: 10px;
-}
-*/
-
-
-
-
-
-
-
-
-
-
-
-
-
