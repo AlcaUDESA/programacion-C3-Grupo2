@@ -1,9 +1,6 @@
-/* Estrategia: Mobile First*/
-/*Nota: El Viewport de 90% puede dar un mejor panorama de la página, esto lo hablamos con el profesor*/
+/* Estrategia: Mobile First*/ /* Estrategia: Mobile First*/
 
-
-
-
+/*Nota: El Viewport de 90% puede dar un mejor panorama de la página, esto lo hablamos con el profesor*/ /*Ya lo corregimos en Home por las dudas*/
 
 /* CSS PARA EL INDEX-HOME Y PROPIEDADES GENERALES NECESARIAS*/
 
@@ -54,14 +51,14 @@ header {
   padding: 0%;
 }
 
-.LogoHome{
+.LogoHome {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
 }
 
-.logoHome a{
+.logoHome a {
   width: 100%;
 }
 
@@ -85,7 +82,6 @@ h3 {
   font-weight: 400;
   margin: 20px;
 }
-
 
 article h3,
 p {
@@ -130,8 +126,6 @@ p {
   background-color: black;
 }
 
-
-
 .contenedorImagen img {
   width: 100%;
   height: 100%;
@@ -140,15 +134,14 @@ p {
   cursor: pointer;
 }
 
-
 .main-footer {
   background-color: red;
-    font-weight: bold;
-    color: whitesmoke;
-    display: flex;
-    height: 20vh;
-    justify-content: center;
-    align-items: center;
+  font-weight: bold;
+  color: whitesmoke;
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
 }
 
 .listadoIndex {
@@ -159,105 +152,99 @@ p {
   text-align: center;
 }
 
-/* AQUI EMPIEZA LA SECCION CSS PARA DETAIL-MOVIE Y DETAIL SERIES */ 
+/* AQUI EMPIEZA LA SECCION CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
 
-.cajaPelicula{
+.cajaPelicula {
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   margin: 10px;
   align-items: center;
 }
-.articuloPelicula{
+.articuloPelicula {
   width: 35%;
   margin: 5px;
 }
-.articuloPelicula img{
+.articuloPelicula img {
   width: 90%;
 }
-.listaPelicula{
+.listaPelicula {
   display: flex;
   width: 60%;
   color: whitesmoke;
   text-align: center;
-  
 }
-.listaPelicula ul{
+.listaPelicula ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
   text-align: center;
 }
-.descripcionPelicula{
+.descripcionPelicula {
   color: whitesmoke;
   margin: 10px;
 }
 
-
-
-
-
-.cajaSerie{
+.cajaSerie {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
   flex-direction: column;
   margin: 10px;
 }
-.articuloSerie{
+.articuloSerie {
   width: 35%;
   margin: 5px;
 }
-.articuloSerie img{
+.articuloSerie img {
   width: 90%;
 }
-.listaSerie{
+.listaSerie {
   display: flex;
   width: 60%;
   color: whitesmoke;
 }
-.listaSerie ul{
+.listaSerie ul {
   display: flex;
   flex-direction: column;
   justify-content: center;
-  text-align:center;
+  text-align: center;
 }
-.descripcionSerie{
+.descripcionSerie {
   color: whitesmoke;
   margin: 10px;
   text-align: justify;
 }
 
-.subtitulosDetalles{
+.subtitulosDetalles {
   color: white;
   font-size: x-large;
   text-align: center;
   margin: 5%;
 }
-/* AQUI EMPIEZA LA SECCION CSS PARA GENEROS */ 
+/* AQUI EMPIEZA LA SECCION CSS PARA GENEROS */
 
-.contenedorGenres{
+.contenedorGenres {
   display: flex;
   flex-direction: column;
 }
 
-.articulosGenres{
+.articulosGenres {
   padding: 5px;
-  border-radius:20px;
+  border-radius: 20px;
   border: 2px solid red;
   text-align: center;
   margin: 20px;
   background-color: black;
 }
 
-
-.titularGeneros{
+.titularGeneros {
   text-align: center;
-color: whitesmoke;
-font-weight: 300;
+  color: whitesmoke;
+  font-weight: 300;
 }
 
-/* AQUI EMPIEZA LA SECCION CSS PARA FAVORITOS*/ 
+/* AQUI EMPIEZA LA SECCION CSS PARA FAVORITOS*/
 
 .contenedorArticulosFavoritos {
   display: flex;
@@ -267,38 +254,32 @@ font-weight: 300;
   padding: 10px;
 }
 
-
 h1#favoritosTitular {
   text-align: center;
-  color:whitesmoke;
+  color: whitesmoke;
   font-weight: 300;
 }
 
-#sinResultados{
+#sinResultados {
   display: none;
 }
 
-
-#main-footerDos{
+#main-footerDos {
   background-color: red;
-    font-weight: bold;
-    color: whitesmoke;
-    display: flex;
-    height: 20vh;
-    justify-content: center;
-    align-items: center;
-    margin: 500px 0px 0px 0px;
+  font-weight: bold;
+  color: whitesmoke;
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  margin: 500px 0px 0px 0px;
 }
 
-
-
 /*Sección de Media Queries en orden a la metodología Mobile First*/
-
 
 /*Media Querie de Tableta*/
 
 @media (min-width: 768px) {
-
   /*Para la pagina de Index  versión tablet*/
   .articulosIndex {
     background-color: black;
@@ -318,7 +299,6 @@ h1#favoritosTitular {
     width: 30%;
     display: flex;
   }
-
 
   .logo {
     width: 60%;
@@ -370,8 +350,7 @@ h1#favoritosTitular {
     margin: 10px;
   }
 
-
-   /*Para la página de generos  version tablet*/
+  /*Para la página de generos  version tablet*/
   .contenedorGenres {
     display: flex;
     flex-direction: column;
@@ -381,33 +360,25 @@ h1#favoritosTitular {
     padding: 34px;
   }
 
-    /*Para la página de Favoritos version tablet*/
+  /*Para la página de Favoritos version tablet*/
   .contenedorArticulosFavoritos {
     padding: 10px;
     flex-direction: row;
   }
 
-
-  .listaPelicula{
+  .listaPelicula {
     font-size: 40px;
   }
 
-
-  .listaSerie{
+  .listaSerie {
     font-size: 40px;
   }
-
 }
-
-
-
-
 
 /*Media Querie de Computador*/
 
 @media (min-width: 1024px) {
-
-    /*pagina de index  version pc*/
+  /*pagina de index  version pc*/
   .articulosIndex {
     background-color: black;
     color: white;
@@ -419,8 +390,7 @@ h1#favoritosTitular {
     margin: 0%;
   }
 
-
-  .logoHome{
+  .logoHome {
     width: 30%;
     display: flex;
   }
@@ -468,7 +438,7 @@ h1#favoritosTitular {
   }
 
   /*pagina de detalle de peliculas version pc*/
-  
+
   /*pagina de generos version pc*/
 
   .contenedorGenres {
@@ -480,19 +450,17 @@ h1#favoritosTitular {
     padding: 25.5px;
   }
 
-
   /*pagina de favoritos version pc*/
 
   .contenedorArticulosFavoritos {
     padding: 10px;
     flex-direction: row;
   }
-  .listaPelicula{
+  .listaPelicula {
     font-size: 40px;
   }
 
-  .listaSerie{
+  .listaSerie {
     font-size: 40px;
-
-}
+  }
 }
