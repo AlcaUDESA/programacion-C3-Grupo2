@@ -1,6 +1,11 @@
 /* Estrategia: Mobile First*/
+/*Nota: El Viewport de 90% puede dar un mejor panorama de la página, esto lo hablamos con el profesor*/
 
-/* CSS INDEX-HOME Y PROPIEDADES GENERALES*/
+
+
+
+
+/* CSS PARA EL INDEX-HOME Y PROPIEDADES GENERALES NECESARIAS*/
 
 * {
   box-sizing: border-box;
@@ -49,11 +54,15 @@ header {
   padding: 0%;
 }
 
-.LogoHome {
+.LogoHome{
   display: flex;
   flex-wrap: wrap;
   flex-direction: column;
   justify-content: center;
+}
+
+.logoHome a{
+  width: 100%;
 }
 
 .logo {
@@ -150,9 +159,7 @@ p {
   text-align: center;
 }
 
-/* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */ /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
-/* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */ /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
-/* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */ /* CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
+/* AQUI EMPIEZA LA SECCION CSS PARA DETAIL-MOVIE Y DETAIL SERIES */ 
 
 .cajaPelicula{
   display: flex;
@@ -180,9 +187,50 @@ p {
   margin: 2px;
 }
 
-/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*
-/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*
-/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/ /*¨/*CSS PARA GENEROS*/
+
+
+
+
+.cajaSerie{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  flex-direction: column;
+  margin: 10px;
+}
+.articuloSerie{
+  width: 35%;
+  margin: 5px;
+}
+.articuloSerie img{
+  width: 90%;
+}
+.listaSerie{
+  display: flex;
+  width: 60%;
+  color: whitesmoke;
+}
+.listaSerie ul{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align:center;
+}
+.descripcionSerie{
+  color: whitesmoke;
+  margin: 2px;
+  text-align: justify.
+}
+
+
+
+
+
+
+
+
+
+/* AQUI EMPIEZA LA SECCION CSS PARA GENEROS */ 
 
 .contenedorGenres{
   display: flex;
@@ -205,10 +253,7 @@ color: whitesmoke;
 font-weight: 300;
 }
 
-/*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/
-/*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/
-/*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/
-/*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/ /*¨CSS PARA FAVORITOS*/
+/* AQUI EMPIEZA LA SECCION CSS PARA FAVORITOS*/ 
 
 .contenedorArticulosFavoritos {
   display: flex;
@@ -230,35 +275,27 @@ h1#favoritosTitular {
 }
 
 
+#main-footerDos{
+  background-color: red;
+    font-weight: bold;
+    color: whitesmoke;
+    display: flex;
+    height: 20vh;
+    justify-content: center;
+    align-items: center;
+    margin: 500px 0px 0px 0px;
+}
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+/*Sección de Media Queries en orden a la metodología Mobile First*/
 
 
 /*Media Querie de Tableta*/
 
 @media (min-width: 768px) {
 
-  /*pagina de index  version tablet*/
+  /*Para la pagina de Index  versión tablet*/
   .articulosIndex {
     background-color: black;
     color: white;
@@ -278,11 +315,6 @@ h1#favoritosTitular {
     display: flex;
   }
 
-  .logoHome a {
-    display: flex;
-    width: 100%;
-    justify-content: center;
-  }
 
   .logo {
     width: 60%;
@@ -335,7 +367,7 @@ h1#favoritosTitular {
   }
 
 
-   /*pagina de generos  version tablet*/
+   /*Para la página de generos  version tablet*/
   .contenedorGenres {
     display: flex;
     flex-direction: column;
@@ -345,6 +377,7 @@ h1#favoritosTitular {
     padding: 34px;
   }
 
+    /*Para la página de Favoritos version tablet*/
   .contenedorArticulosFavoritos {
     padding: 10px;
     flex-direction: row;
@@ -354,7 +387,17 @@ h1#favoritosTitular {
   .listaPelicula{
     font-size: 50px;
   }
+
+
+  .listaSerie{
+    font-size: 50px;
+  }
+
 }
+
+
+
+
 
 /*Media Querie de Computador*/
 
@@ -372,6 +415,11 @@ h1#favoritosTitular {
     margin: 0%;
   }
 
+
+  .logoHome{
+    width: 30%;
+    display: flex;
+  }
   .articulosDeNav {
     display: flex;
     flex-wrap: wrap;
@@ -429,7 +477,6 @@ h1#favoritosTitular {
   }
 
 
-
   /*pagina de favoritos version pc*/
 
   .contenedorArticulosFavoritos {
@@ -439,19 +486,9 @@ h1#favoritosTitular {
   .listaPelicula{
     font-size: 50px;
   }
-}
 
+  .listaSerie{
+    font-size: 50px;
 
-
-
-#main-footerDos{
-  background-color: red;
-    font-weight: bold;
-    color: whitesmoke;
-    display: flex;
-    height: 20vh;
-    justify-content: center;
-    align-items: center;
-    margin: 500px 0px 0px 0px;
 }
 

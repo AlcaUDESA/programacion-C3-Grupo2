@@ -1,87 +1,102 @@
 <!DOCTYPE html>
 <html lang="en">
-
-<head>
+  <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
+      rel="stylesheet"
+    />
     <link rel="icon" href="./img/faviconTesla.ico" />
 
     <title>Tesla Cine - Detalle de Películas</title>
-</head>
+  </head>
 
-<body>
+  <body>
     <header>
-        <div class="logoHome">
-            <a href="index.html"><img class="logo" src="./img/logo-home.png" alt="Logo" /></a>
-        </div>
-        <div id="segundoDiv">
-            <nav class="navegadorHeader">
-                <ul>
-                    <li>
-                        <a href="index.html">Home</a>
-                    </li>
-                    <li>
-                        <a href="detail-movie.html">Peliculas</a>
-                    </li>
-                    <li>
-                        <a href="detail-series.html">Series</a>
-                    </li>
-                    <li>
-                        <a href="favorites.html">Favoritos</a>
-                    </li>
-                    <li>
-                        <a href="genres.html">Generos</a>
-                    </li>
-                </ul>
-            </nav>
-            <form method="GET" class="buscadorHeader" action="./search-results.html">
-                <input id="buscadorHeaderInput" type="search" placeholder="Search..." />
-              </form>
-        </div>
+      <div class="logoHome">
+        <a href="index.html"
+          ><img class="logo" src="./img/logo-home.png" alt="Logo"
+        /></a>
+      </div>
+      <div id="segundoDiv">
+        <nav class="navegadorHeader">
+          <ul>
+            <li>
+              <a href="index.html">Home</a>
+            </li>
+            <li>
+              <a href="detail-movie.html">Peliculas</a>
+            </li>
+            <li>
+              <a href="detail-series.html">Series</a>
+            </li>
+            <li>
+              <a href="favorites.html">Favoritos</a>
+            </li>
+            <li>
+              <a href="genres.html">Generos</a>
+            </li>
+          </ul>
+        </nav>
+        <form
+          method="GET"
+          class="buscadorHeader"
+          action="./search-results.html"
+        >
+          <input
+            id="buscadorHeaderInput"
+            type="search"
+            name="formularioDeBusqueda"
+            placeholder="Search..."
+          />
+        </form>
+      </div>
     </header>
- 
-    <main>
-        <section class="cajaPelicula">
-            <article class="articuloPelicula">
-                <img src="./img/endgame.jpg" alt="Foto de Avengers Endgame">
-            </article>
-            <article class="listaPelicula">
-                <ul>
-                    <li>
-                        Avengers: Endgame
-                    </li>
-                    <li>
-                        Rating: 8.4/10
-                    </li>
-                    <li>
-                        Fecha de estreno: 26 de Abril de 2019
-                    </li>
-                    <li>Genero:
-                        <a href="genres.html">Acción</a>
-                    </li>
-                </ul>
-            </article>
-        </section>
-        <section class="descripcionPelicula">
-            <p>Después de los eventos devastadores de "Avengers: Infinity War", el universo está en ruinas debido a las
-                acciones de Thanos, el Titán Loco. Con la ayuda de los aliados que quedaron, los Vengadores deberán
-                reunirse una vez más para intentar detenerlo y restaurar el orden en el universo de una vez por todas.
-            </p>
-        </section>
 
+    <main>
+      <section class="cajaPelicula">
+        <article class="articuloPelicula">
+          <img src="./img/endgame.jpg" alt="Foto de Avengers Endgame" />
+        </article>
+        <article class="listaPelicula">
+          <ul>
+            <li>Avengers: Endgame</li>
+            <li>Rating: 8.4/10</li>
+            <li>Fecha de estreno: 26 de Abril de 2019</li>
+            <li>
+              Genero:
+              <a href="genres.html">Acción</a>
+            </li>
+            <li>
+              <label for="radio"
+                >Agregar a <a href="favorites.html">favoritos</a></label
+              >
+              <input type="checkbox" name="favoritos" />
+            </li>
+          </ul>
+        </article>
+      </section>
+      <section class="descripcionPelicula">
+        <p>
+          Después de los eventos devastadores de "Avengers: Infinity War", el
+          universo está en ruinas debido a las acciones de Thanos, el Titán
+          Loco. Con la ayuda de los aliados que quedaron, los Vengadores deberán
+          reunirse una vez más para intentar detenerlo y restaurar el orden en
+          el universo de una vez por todas.
+        </p>
+      </section>
     </main>
 
     <footer id="main-footerDos">
-        <p>
-            Realizado por Agustín Alcaraz, Santiago Herrera y Bautista Martinez
-            Baeza
-        </p>
+      <p>
+        Realizado por Agustín Alcaraz, Santiago Herrera y Bautista Martinez
+        Baeza
+      </p>
     </footer>
-</body>
-
+  </body>
 </html>
