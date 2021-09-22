@@ -164,6 +164,9 @@ p {
 .cajaPelicula{
   display: flex;
   flex-wrap: wrap;
+  flex-direction: column;
+  margin: 10px;
+  align-items: center;
 }
 .articuloPelicula{
   width: 35%;
@@ -176,15 +179,18 @@ p {
   display: flex;
   width: 60%;
   color: whitesmoke;
+  text-align: center;
+  
 }
 .listaPelicula ul{
   display: flex;
   flex-direction: column;
   justify-content: center;
+  text-align: center;
 }
 .descripcionPelicula{
   color: whitesmoke;
-  margin: 2px;
+  margin: 10px;
 }
 
 
@@ -218,18 +224,16 @@ p {
 }
 .descripcionSerie{
   color: whitesmoke;
-  margin: 2px;
-  text-align: justify.
+  margin: 10px;
+  text-align: justify;
 }
 
-
-
-
-
-
-
-
-
+.subtitulosDetalles{
+  color: white;
+  font-size: x-large;
+  text-align: center;
+  margin: 5%;
+}
 /* AQUI EMPIEZA LA SECCION CSS PARA GENEROS */ 
 
 .contenedorGenres{
@@ -385,12 +389,12 @@ h1#favoritosTitular {
 
 
   .listaPelicula{
-    font-size: 50px;
+    font-size: 40px;
   }
 
 
   .listaSerie{
-    font-size: 50px;
+    font-size: 40px;
   }
 
 }
@@ -407,7 +411,7 @@ h1#favoritosTitular {
   .articulosIndex {
     background-color: black;
     color: white;
-    width: 17%;
+    width: 15%;
   }
 
   .logo {
@@ -484,11 +488,11 @@ h1#favoritosTitular {
     flex-direction: row;
   }
   .listaPelicula{
-    font-size: 50px;
+    font-size: 40px;
   }
 
   .listaSerie{
-    font-size: 50px;
+    font-size: 40px;
 
 }
-
+}
