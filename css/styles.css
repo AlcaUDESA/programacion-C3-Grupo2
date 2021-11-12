@@ -437,7 +437,11 @@ h1#favoritosTitular {
     flex-direction: row;
   }
   .listaPelicula{
-    font-size: 50px;
+    font-size: 30px;
+  }
+
+  .descripcionPelicula{
+    font-size: 20px;
   }
 }
 
