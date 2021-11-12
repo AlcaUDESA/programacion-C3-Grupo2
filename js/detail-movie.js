@@ -21,9 +21,7 @@ let url =`https://api.themoviedb.org/3/movie/${id}?api_key=4bcb2ca1395628db6221b
 
 
 
-
-
-    //Como no hay array. Reemplazamos/Actualizamos la información de esos elementos capturados
+    //Como no hay array con las peliculas. Reemplazamos/Actualizamos la información de esos elementos capturados
         titulo.innerText = data.title;
         imagen.src = `https://image.tmdb.org/t/p/w342/${data.poster_path}`;
         subtitulo.innerText = data.title;
@@ -34,3 +32,10 @@ let url =`https://api.themoviedb.org/3/movie/${id}?api_key=4bcb2ca1395628db6221b
     .catch(function (error) {
         console.log("El error fue: " + error);
     });
+
+
+
+
+//Falta editar la parte que te dice los generos de las peliculas
+//Los generos estan metidos todos en un Array en cada caso, es decir para cada pelicula en sí hay un array con sus generos
+//
