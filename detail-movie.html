@@ -1,85 +1,74 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="./css/styles.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap"
-      rel="stylesheet"
-    />
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet" />
     <link rel="icon" href="./img/faviconTesla.ico" />
 
     <title>Tesla Cine - Detalle de Películas</title>
-  </head>
+</head>
 
-  <body>
+<body>
     <header>
-      <div class="logoHome">
-        <a href="index.html"
-          ><img class="logo" src="./img/logo-home.png" alt="Logo"
-        /></a>
-      </div>
-      <div id="segundoDiv">
-        <nav class="navegadorHeader">
-          <ul>
-            <li>
-              <a href="index.html">Home</a>
-            </li>
-            <li>
-              <a href="detail-movie.html">Peliculas</a>
-            </li>
-            <li>
-              <a href="detail-series.html">Series</a>
-            </li>
-            <li>
-              <a href="favorites.html">Favoritos</a>
-            </li>
-            <li>
-              <a href="genres.html">Generos</a>
-            </li>
-          </ul>
-        </nav>
-        <form
-          method="GET"
-          class="buscadorHeader"
-          action="./search-results.html"
-        >
-          <input
-            id="buscadorHeaderInput"
-            type="search"
-            name="formularioDeBusqueda"
-            placeholder="Search..."
-          />
-        </form>
-      </div>
+        <div class="logoHome">
+            <a href="index.html"><img class="logo" src="./img/logo-home.png" alt="Logo" /></a>
+        </div>
+        <div id="segundoDiv">
+            <nav class="navegadorHeader">
+                <ul>
+                    <li>
+                        <a href="index.html">Home</a>
+                    </li>
+                    <li>
+                        <a href="detail-movie.html">Peliculas</a>
+                    </li>
+                    <li>
+                        <a href="detail-series.html">Series</a>
+                    </li>
+                    <li>
+                        <a href="favorites.html">Favoritos</a>
+                    </li>
+                    <li>
+                        <a href="genres.html">Generos</a>
+                    </li>
+                </ul>
+            </nav>
+            <form method="GET" class="buscadorHeader" action="./search-results.html">
+                <input id="buscadorHeaderInput" type="search" name="formularioDeBusqueda" placeholder="Search..." />
+            </form>
+        </div>
     </header>
 
     <main>
-      <section class="cajaPelicula">
-        <h2 class="subtitulosDetalles" >Avengers Endgame</h2>
-        <article class="articuloPelicula">
-          </a><img src="./img/endgame.jpg" alt="Foto de Avengers Endgame" />
-        </article>
-        <article class="listaPelicula">
-          <ul>
-            <li>Avengers: Endgame</li>
-            <li>Rating: 8.4/10</li>
-            <li>Fecha de estreno: 26 de Abril de 2019</li>
-            <li>
-              Genero:
-              <a href="genres.html">Acción</a>
-            </li>
-            <li>
-              <label for="radio"
-                >Agregar a <a href="favorites.html">favoritos</a></label
+        <section class="cajaPelicula">
+            <h2 class="subtitulosDetalles"></h2>
+            <article class="articuloPelicula">
+                </a>
+                    <img class="imagenPeli" src="" alt=""/>
+                </a>
+            </article>
+            <article class="listaPelicula">
+                <ul>
+                    <li class="tituloPelicula"></li>
+                    <li class="ratingPelicula"></li>
+                    <li class="fechaEstrenoPelicula"></li>
+                    <li class="listaGeneros">
+                        Genero:
+                        <a href="genres.html"></a>
+                    </li>
+                    <li>
+                        <label for="radio">Agregar a <a href="favorites.html">favoritos</a></label
               >
               <input type="checkbox" name="favoritos" />
             </li>
           </ul>
+          
         </article>
       </section>
       <section class="descripcionPelicula">
@@ -99,5 +88,6 @@
         Baeza
       </p>
     </footer>
+    <script src="./js/detail-movie.js "></script>
   </body>
 </html>
