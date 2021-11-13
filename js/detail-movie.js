@@ -19,8 +19,6 @@ let url =`https://api.themoviedb.org/3/movie/${id}?api_key=4bcb2ca1395628db6221b
         let fechaEstreno = document.querySelector(".fechaEstrenoPelicula");
         let descripcionPelicula = document.querySelector(".descripcionPelicula");
 
-
-
     //Como no hay array con las peliculas. Reemplazamos/Actualizamos la información de esos elementos capturados
         titulo.innerText = data.title;
         imagen.src = `https://image.tmdb.org/t/p/w342/${data.poster_path}`;
@@ -28,6 +26,17 @@ let url =`https://api.themoviedb.org/3/movie/${id}?api_key=4bcb2ca1395628db6221b
         rating.innerText = `Rating:${data.vote_average}`;
         fechaEstreno.innerText = `Fecha de estreno: ${data.release_date}`;
         descripcionPelicula.innerText = data.overview;
+
+        //Generos del detalle//
+        let generos = data.genres
+        let generoDetalle = document.querySelector(".genero")
+        let generosLista = ""
+    
+        for(let i=0; i<generos.length;i++){
+            generosLista += `<a class="anclajeGeneros" href="detail-genres.html?id=${generos[i].id}">${generos[i].name}</a>. `
+        }
+
+        generoDetalle.innerHTML = generosLista
     })
     .catch(function (error) {
         console.log("El error fue: " + error);
