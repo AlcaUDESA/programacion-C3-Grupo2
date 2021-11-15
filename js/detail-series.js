@@ -19,14 +19,27 @@ fetch(url)
     let descripcionSerie = document.querySelector(".descripcionSerie");
 
 
-    titulo.innerText = data.title;
+    titulo.innerText = data.original_name;
     imagen.src =  `https://image.tmdb.org/t/p/w342/${data.poster_path}` ;
-    subtitulo.innerText = data.title;
+    subtitulo.innerText = data.original_name;
     rating.innerText = `Rating:${data.vote_average}`;
-    fechaEstreno.innerText = `Fecha de estreno: ${data.release_date}`;
+    fechaEstreno.innerText = `Fecha de estreno: ${data.first_air_date}`;
     descripcionSerie.innerText = data.overview;
+
+    let generos = data.genres
+        let generoDetalle = document.querySelector(".genero")
+        let generosLista = ""
+       
+       
+        for(let i=0; i<generos.length;i++){
+            generosLista += `<a class="anclajeGeneros" href="detail-genres.html?id=${generos[i].id}">${generos[i].name}</a>. `
+        }
+
+        generoDetalle.innerHTML = generosLista
+
 })
 
 .catch(function (error) {
     console.log("El error fue: " + error);
 });
+
