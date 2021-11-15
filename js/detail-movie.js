@@ -19,8 +19,6 @@ let url =`https://api.themoviedb.org/3/movie/${id}?api_key=4bcb2ca1395628db6221b
         let fechaEstreno = document.querySelector(".fechaEstrenoPelicula");
         let descripcionPelicula = document.querySelector(".descripcionPelicula");
 
-
-
     //Como no hay array con las peliculas. Reemplazamos/Actualizamos la información de esos elementos capturados
         titulo.innerText = data.title;
         imagen.src = `https://image.tmdb.org/t/p/w342/${data.poster_path}`;
@@ -28,6 +26,62 @@ let url =`https://api.themoviedb.org/3/movie/${id}?api_key=4bcb2ca1395628db6221b
         rating.innerText = `Rating:${data.vote_average}`;
         fechaEstreno.innerText = `Fecha de estreno: ${data.release_date}`;
         descripcionPelicula.innerText = data.overview;
+
+        //Generos del detalle//
+        let generos = data.genres
+        let generoDetalle = document.querySelector(".genero")
+        let generosLista = ""
+    
+        for(let i=0; i<generos.length;i++){
+            generosLista += `<a class="anclajeGeneros" href="detail-genres.html?id=${generos[i].id}">${generos[i].name}</a>. `
+        }
+
+        generoDetalle.innerHTML = generosLista
+
+        // parte de Favoritos en detalle //
+
+
+//Creamos un array que iremos completando con datos//
+    let favoritos = []
+
+//Recuperamos storage 
+    let recuperoStorage = localStorage.getItem("favoritos");
+
+    if(recuperoStorage!= null){
+        //primero queremos que sea una cadena de texto para guardarlo en favoritos
+
+        favoritos = JSON.parse(recuperoStorage);
+    }
+
+    //Al Hacer click en el link ... 
+
+    let fav = document.querySelector(".fav");
+
+//Chequear si está el ID en el array de Favoritos pertenenciente al eleegido
+
+    if(favoritos.includes(id)){
+        fav.innerText = "Quitar de Favoritos"
+    }
+
+
+    fav.addEventListener("click", function(evento){
+        evento.preventDefault();
+
+    //Agregamos un dato al array
+
+    favoritos.push(id);
+    fav.innerText = "Quitar de Favoritos" ;
+    
+    //Guardamos el array en el Storage
+    let favToString = JSON.stringify(favoritos) //Transformamos el array en cadena de texto
+
+    localStorage.setItem("favoritos", favToString);//Guardamos array en el storage
+
+    console.log(localStorage)
+    })
+    
+    
+
     })
     .catch(function (error) {
         console.log("El error fue: " + error);
@@ -36,6 +90,6 @@ let url =`https://api.themoviedb.org/3/movie/${id}?api_key=4bcb2ca1395628db6221b
 
 
 
-//Falta editar la parte que te dice los generos de las peliculas
-//Los generos estan metidos todos en un Array en cada caso, es decir para cada pelicula en sí hay un array con sus generos
-//
+
+
+
