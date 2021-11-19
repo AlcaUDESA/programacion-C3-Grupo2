@@ -555,6 +555,11 @@ h1#favoritosTitular {
         flex-wrap: wrap;
         flex-direction: row;
     }
+    .contenedorSeriesDetalle{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; 
+    }
 
     .tituloGenres{
         color: whitesmoke;

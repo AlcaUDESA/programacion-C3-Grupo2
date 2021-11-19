@@ -53,12 +53,13 @@ let urlGenresSeries= "https://api.themoviedb.org/3/genre/tv/list?api_key=531fb37
 
    .then(function(data){
 console.log(data.genres);
+let info = data.genres
 let genresSeries= document.querySelector(".contenedorGenresSeries")
 let genresListaSeries="";
 
 for (let i=0; i<16; i++){
     console.log(data.genres[i]);
-    genresListaSeries+= ` <article class="articulosGenres"> <a href="detail-genres.html"> <h2> ${data.genres[i].name} </h2> </a></article>`;
+    genresListaSeries+= ` <article class="articulosGenres"> <a href="detail-genres.html?id=${info[i].id}&nombre=${data.genres[i].name}"> <h2> ${data.genres[i].name} </h2> </a></article>`;
     
     
    }
