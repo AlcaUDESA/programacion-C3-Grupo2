@@ -74,9 +74,9 @@ for (let i=0; i<info.length; i++){
   <div class="contenedorImagen">
   <a href="detail-movie.html?id=${info[i].id}"><img src="https://image.tmdb.org/t/p/w185/${info[i].poster_path}" alt="."> </a>      
   </div>
-  <h3>${info[i].title}
+  <h3>${info[i].original_name}
   </h3>
-  <p>${info[i].release_date}
+  <p>${info[i].first_air_date}
   </p>
 </article>`
     

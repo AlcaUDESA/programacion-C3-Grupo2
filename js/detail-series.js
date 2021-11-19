@@ -32,7 +32,7 @@ fetch(url)
        
        
         for(let i=0; i<generos.length;i++){
-            generosLista += `<a class="anclajeGeneros" href="detail-genres.html?id=${generos[i].id}">${generos[i].name}</a>. `
+            generosLista += `<a class="anclajeGeneros" href="detail-genres.html?id=${generos[i].id}&nombre=${generos[i].name}">${generos[i].name}</a>. `
         }
 
         generoDetalle.innerHTML = generosLista

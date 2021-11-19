@@ -459,6 +459,20 @@ h1#favoritosTitular {
     .articulosGenres {
         padding: 34px;
     }
+
+    .contenedorPelisDetalle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    }
+    .contenedorSeriesDetalle{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        }
+
     /*Para la página de Favoritos version tablet*/
     .contenedorArticulosFavoritos {
         padding: 10px;
@@ -539,11 +553,13 @@ h1#favoritosTitular {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .contenedorGenresSeries {
         display: flex;
         flex-direction: row;
         flex-wrap: wrap;
+        justify-content: center;
     }
     .articulosGenres {
         padding: 25.5px;
@@ -554,11 +570,13 @@ h1#favoritosTitular {
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
+        
     }
     .contenedorSeriesDetalle{
         display: flex;
         flex-wrap: wrap;
         flex-direction: row; 
+        
     }
 
     .tituloGenres{
