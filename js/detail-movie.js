@@ -37,6 +37,8 @@ fetch(url)
 
     generoDetalle.innerHTML = generosLista;
 
+
+
     // FAVORITOS DETALLE //
 
     //Creamos un array que iremos completando con datos//
@@ -73,11 +75,11 @@ fetch(url)
           fav.innerText = "Quitar de favoritos"
       }
 
-      
-      //Guardamos el array en el Storage
       let favToString = JSON.stringify(favoritos); //Transformamos el array en cadena de texto
 
-      localStorage.setItem("favoritos", favToString); //Guardamos array en el storage
+      //Guardamos el array en el Storage
+      localStorage.setItem("favoritos", favToString);
+
 
       console.log(localStorage);
     });

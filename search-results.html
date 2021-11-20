@@ -15,7 +15,6 @@
     
     <title>Tesla Cine - Resultados de Búsqueda</title>
   </head>
-<!--Aquí Reutilizamos algunas clases ya que queríamos aplicarles una estructura similar que el Index-->
 <body>
   <header>
     <div class="logoHome">
@@ -31,12 +30,6 @@
             <a href="index.html">Home</a>
           </li>
           <li>
-            <a href="detail-movie.html">Peliculas</a>
-          </li>
-          <li>
-            <a href="detail-series.html">Series</a>
-          </li>
-          <li>
             <a href="favorites.html">Favoritos</a>
           </li>
           <li>
@@ -46,32 +39,42 @@
       </nav>
 
       <form method="GET" class="buscadorHeader" action="./search-results.html">
-        <input id="buscadorHeaderInput" type="search" placeholder="Search..." />
-      </form>
+        <input id="buscadorHeaderInput" type="search" name="formularioDeBusqueda" placeholder="Buscar algo" />
+    </form>
     </div>
   </header>
 
   <main id="MainDelIndex">
-    <span>Estos son los resultados de tu búsqueda</span>
-    <section>
-      <div class="contenedorArticulos">
-        <article class="articulosIndex">
-          <div class="contenedorImagen">
-            <a href="./detail-movie.html"><img src="./img/matrix.jpg" alt="" /></a>  
-          </div>
-          <h3>Matrix</h3>
-          <p>1999</p>
-        </article>
-<!--Por el momento este h3 permanece oculto con un Display:None-->
-  <h3 id="sinResultados"">No hay datos coincidentes con tu búsqueda</h3>
+    <div class="carga"><img src="./img/loading.gif" alt=""></div>
+    <h2>Peliculas encontradas</h2>
+    <section class = "searchMovies">
+ 
+    </section>
+    <h2>Series encontradas</h2>
+    <section class = "searchTVS">
+  
+    </section>
+
+
+  <h3 id="sinResultados">No hay datos coincidentes con tu búsqueda</h3>
+
+
+
+
+
   </main>
     
+
+
+
+
+</section>
   <footer id="main-footerDos">
     <p>
         Realizado por Agustín Alcaraz, Santiago Herrera y Bautista Martinez
         Baeza
     </p>
 </footer>
-
+<script src="./js/search-results.js"></script>
   </body>
   </html>

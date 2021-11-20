@@ -1,3 +1,4 @@
+//FAVORITOS DE PELICULAS//
 console.log("favoritos")
 
 //Recupero Storage//
@@ -14,11 +15,12 @@ let peliculasFavoritas = ""
 
 //Si el storage está vacío indicamos al usuario que no hay favoritos seleccionados
 
-if(favoritos==null || favoritos.length == 0 ) {
-    section.innerHTML = "<p>¡No hay favoritos seleccionados!</p>"
+if(favoritos == null || favoritos.length == 0 ) {
+    favoritosTitular.innerText = "¡No hay favoritos seleccionados!"
+
 }
 else{
-    //for para recorrer el array 
+    //for para recorrer el array que tiene los favoritos
     for (let i=0; i<favoritos.length; i++){
         buscarYMostrarFavoritosPeliculas(favoritos[i])
     }
@@ -35,16 +37,17 @@ function buscarYMostrarFavoritosPeliculas(id){
         })
         .then(function(data) {
             console.log(data);
+
             peliculasFavoritas += 
             `
             <article class="articulosIndex">
             <div class="contenedorImagen">
-                <a href="detail-movie.html?id=${info[i].id}">
-                    <img src= "https://image.tmdb.org/t/p/w185/${info[i].poster_path}" alt="">
+                <a href="detail-movie.html?id=${data.id}">
+                    <img src= "https://image.tmdb.org/t/p/w185/${data.poster_path}" alt="">
                 </a>
             </div>
-            <h3>${info[i].title}</h3>
-            <p>${info[i].release_date}</p>
+            <h3>${data.title}</h3>
+            <p>${data.release_date}</p>
         </article>`;
             
     
@@ -55,22 +58,3 @@ function buscarYMostrarFavoritosPeliculas(id){
         });
     
     }
-
-//PARA SERIES//
-let sectionDos = document.querySelector(".contenedorArticulosFavoritosSerie");
-let seriesFavoritas = ""
-
-
-if(favoritos==null || favoritos.length == 0 ) {
-    section.innerHTML = "<p>¡No hay favoritos seleccionados!</p>"
-}
-else{
-    //for para recorrer el array 
-    for (let i=0; i<favoritos.length; i++){
-        buscarYMostrarFavoritosSeries(favoritos[i])
-    }
-}
-
-
-
-
