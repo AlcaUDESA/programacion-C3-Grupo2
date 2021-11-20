@@ -1,5 +1,6 @@
 
-//Esto sucede cuando no carga los datos que consulto de los Fetch
+
+
 let queryStringBusqueda = location.search;
 let queryStringObjectSearch = new URLSearchParams(queryStringBusqueda);
 let query = queryStringObjectSearch.get("formularioDeBusqueda");

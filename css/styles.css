@@ -287,9 +287,21 @@ ESTO LO AGREGUÉ PAR JAVASCRIPT DE CADA CONTENEDOR PARA CADA SECTION
 /* AQUI EMPIEZA LA SECCION CSS PARA GENEROS */
 
 .contenedorGenres {
-    display: flex;
-    flex-direction: column;
+    
+    flex-direction: row;
+    flex-wrap: wrap;
 }
+
+.contenedorGenresSeries {
+    
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.tituloGenres{
+    color: whitesmoke;
+    text-align: center;
+}
+
 
 .articulosGenres {
     padding: 5px;
@@ -298,6 +310,7 @@ ESTO LO AGREGUÉ PAR JAVASCRIPT DE CADA CONTENEDOR PARA CADA SECTION
     text-align: center;
     margin: 20px;
     background-color: black;
+    
 }
 
 .titularGeneros {
@@ -315,7 +328,16 @@ ESTO LO AGREGUÉ PAR JAVASCRIPT DE CADA CONTENEDOR PARA CADA SECTION
     flex-direction: column;
     justify-content: space-between;
     padding: 10px;
-}
+    flex-direction: row;
+  }
+  .listaPelicula{
+    font-size: 30px;
+  }
+
+  .descripcionPelicula{
+    font-size: 20px;
+  }
+
 
 h1#favoritosTitular {
     text-align: center;
@@ -437,6 +459,20 @@ h1#favoritosTitular {
     .articulosGenres {
         padding: 34px;
     }
+
+    .contenedorPelisDetalle{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+    }
+    .contenedorSeriesDetalle{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: center;
+        }
+
     /*Para la página de Favoritos version tablet*/
     .contenedorArticulosFavoritos {
         padding: 10px;
@@ -515,10 +551,37 @@ h1#favoritosTitular {
     /*pagina de generos version pc*/
     .contenedorGenres {
         display: flex;
-        flex-direction: column;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+    .contenedorGenresSeries {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: center;
     }
     .articulosGenres {
         padding: 25.5px;
+        width: 20%;
+    }
+
+    .contenedorPelisDetalle{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        
+    }
+    .contenedorSeriesDetalle{
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row; 
+        
+    }
+
+    .tituloGenres{
+        color: whitesmoke;
+        text-align: left;
     }
     /*pagina de favoritos version pc*/
     .contenedorArticulosFavoritos {

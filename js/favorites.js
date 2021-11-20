@@ -1,4 +1,4 @@
-//FAVORITOS DE PELICULAS//
+                    //FAVORITOS DE PELICULAS//
 console.log("favoritos")
 
 //Recupero Storage//
@@ -58,3 +58,63 @@ function buscarYMostrarFavoritosPeliculas(id){
         });
     
     }
+
+                        //FAVORITOS DE SERIES//
+                        console.log("favoritos")
+                        //Recupero Storage//
+                        
+                        let recuperoStorageDos = localStorage.getItem("favoritosSerie");
+                        //Transformamos el JSON en un array
+                        let favoritosSerie = JSON.parse(recuperoStorageDos)
+                        console.log(favoritosSerie);
+
+                        //Capturamos el contenedor del elemento a mostrar
+
+                        let sectionSerie = document.querySelector(".contenedorArticulosFavoritosSeries");
+                        let seriesFavoritas = ""
+                        
+                        //Si el storage está vacío indicamos al usuario que no hay favoritos seleccionados
+                        
+                        if(favoritosSerie == null || favoritosSerie.length == 0 ) {
+                            favoritosSerie.innerText = "¡No hay favoritos seleccionados!"
+                        
+                        }
+                        else{
+                            //for para recorrer el array que tiene los favoritos
+                            for (let i=0; i<favoritosSerie.length; i++){
+                                buscarYMostrarFavoritosSeries(favoritosSerie[i])
+                            }
+                        }
+                        
+                        function buscarYMostrarFavoritosSeries(id){
+                        
+                            //Fetch para buscar cada elemento del Array
+                                let urlSeries = `https://api.themoviedb.org/3/tv/${id}?api_key=4bcb2ca1395628db6221ba6939b8c9d7`
+                            
+                                fetch(urlSeries)
+                                .then(function(response) {
+                                    return response.json();
+                                })
+                                .then(function(data) {
+                                    console.log(data);
+                        
+                                    seriesFavoritas += 
+                                    `
+                                    <article class="articulosIndex">
+                                    <div class="contenedorImagen">
+                                        <a href="detail-series.html?id=${data.id}">
+                                            <img src= "https://image.tmdb.org/t/p/w185/${data.poster_path}" alt="">
+                                        </a>
+                                    </div>
+                                    <h3>${data.original_name}</h3>
+                                    <p>${data.first_air_date}</p>
+                                </article>`;
+                                    
+                            
+                                    sectionSerie.innerHTML = seriesFavoritas
+                                })
+                                .catch(function(error) {
+                                    console.log("El error fue: " + error);
+                                });
+                            
+                            }
