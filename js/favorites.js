@@ -63,7 +63,7 @@ function buscarYMostrarFavoritosPeliculas(id){
                         console.log("favoritos")
                         //Recupero Storage//
                         
-                        let recuperoStorageDos = localStorage.getItem("favoritosSerie");
+                        let recuperoStorageDos = localStorage.getItem("favoritosSeries");
                         //Transformamos el JSON en un array
                         let favoritosSerie = JSON.parse(recuperoStorageDos)
                         console.log(favoritosSerie);

@@ -1,6 +1,7 @@
 let queryStringSeries = location.search;
 let queryStringObject = new URLSearchParams(queryStringSeries);
 let id = queryStringObject.get("id");
+
 let url = `https://api.themoviedb.org/3/tv/${id}?api_key=4bcb2ca1395628db6221ba6939b8c9d7`;
 
 fetch(url)
@@ -29,11 +30,13 @@ fetch(url)
     let generoDetalle = document.querySelector(".genero");
     let generosLista = "";
     for (let i = 0; i < generos.length; i++) {
-      generosLista += `<a class="anclajeGeneros" href="detail-genres.html?id=${generos[i].id}">${generos[i].name}</a>. `;
+      generosLista += `<a class="anclajeGeneros" href="detail-genres.html?id=${generos[i].id}&nombre=${generos[i].name}">${generos[i].name}</a>. `;
     }
 
     generoDetalle.innerHTML = generosLista;
 
+
+    //favoritos de Serie//
     let favoritosSeries = [];
 
     let recuperoStorage = localStorage.getItem("favoritosSeries");
@@ -70,6 +73,8 @@ fetch(url)
 
       //Guardamos el array en el Storage
       localStorage.setItem("favoritosSeries", favSerieToString); //Guardamos array en el storage
+   
+   console.log(localStorage)
     });
   })
   .catch(function (error) {
