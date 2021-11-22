@@ -11,6 +11,7 @@ fetch(url)
   .then(function (data) {
     console.log(data);
     //Guardamos en una variable a los elementos que queremos capturar del DOM
+
     let titulo = document.querySelector(".tituloPelicula");
     let imagen = document.querySelector(".imagenPeli");
     let subtitulo = document.querySelector(".subtitulosDetalles");
