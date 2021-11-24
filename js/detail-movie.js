@@ -1,3 +1,24 @@
+ //Validacion formulariosx;//
+
+let formulario = document.querySelector(".buscadorHeader");
+let inputField = document.querySelector("#buscadorHeaderInput");
+
+formulario.addEventListener("submit", function (evento) {
+  evento.preventDefault()
+    if (inputField.value == "") {
+        alert("La busqueda no puede estar vacia!!")
+    } else if (inputField.value.length <= 3) {
+        alert("El termino a buscar debe tener al menos tres caracteres")
+    } else {
+        this.submit();
+    }
+
+});
+
+
+
+
+
 //Utilizamos la QueryString para poder hacer el detalle de cada película a partir del id que te brnda la URL
 let queryStringPeliculas = location.search;
 let queryStringObject = new URLSearchParams(queryStringPeliculas);
@@ -88,3 +109,5 @@ fetch(url)
   .catch(function (error) {
     console.log("El error fue: " + error);
   });
+
+

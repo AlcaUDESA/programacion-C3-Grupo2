@@ -1,3 +1,20 @@
+ //Validacion del formulario//
+
+ let formulario = document.querySelector(".buscadorHeader");
+ let inputField = document.querySelector("#buscadorHeaderInput");
+ 
+ formulario.addEventListener("submit", function (evento) {
+   evento.preventDefault()
+     if (inputField.value == "") {
+         alert("La busqueda no puede estar vacia!!")
+     } else if (inputField.value.length <= 3) {
+         alert("El termino a buscar debe tener al menos tres caracteres")
+     } else {
+         this.submit();
+     }
+ 
+ });
+
 //Peliculas Populares//
 let urlPopularMovies =
   "https://api.themoviedb.org/3/movie/popular?api_key=4bcb2ca1395628db6221ba6939b8c9d7&language=en-US&page=1";
