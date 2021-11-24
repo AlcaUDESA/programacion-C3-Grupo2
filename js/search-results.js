@@ -38,17 +38,8 @@ fetch(urlSearchMovies)
 
   .then(function (data) {
     console.log(data);
-    // declaro una varaible llamada info donde accede a la propiedad results de toda la informacion de data disponible porque es en results donde estan las peliculas que quiere mostrar  a mi pagina
     let info = data.results;
-    //Y me doy cuenta de que results es un array con una cierta cantidad de peliculas
-    //Entonces empieza mi logica en pos de poder construir articulos que se muestren en pantalla para el usuario donde esten todas esas peliculas
-    //Para eso me doy cuenta de que tengo que crear un bucle, es decir un for. Que me va a servir para recorrer ese array.
-    //Entonces lo primero que hago es, en esta linea donde declaro la variable ContenedorSearchMovies capturar esa parte de mi HTML donde quiero agregar esos articulos.
-    //Y para eso lo que hago es utilizar querySelector, que es un selector de un solo elemento que reconoce los elementos como CSS y me los captura del DOM, por eso escribimos Document, porque document redpresenta nuestra interfaz de HTML virtual que entiende Javascript
     let contenedorSearchMovies = document.querySelector(".searchMovies");
-    //Lo que captura es una clase llamada SearchMovies, y le agrego comillas. Y el punto como si estuviese trabajando en css
-    //Luego declaro un string vacío en donde que lo voy a ir rellenando con cada vuelta de mi bucle, que en este caso depende del largo de mi data.results que es igual a decir la variable info.
-    //Esto lo hago para que esté en formato de cadena texto y HTML me lo entienda, porque sino HTML no lo entenderia.
     let searchString = "";
 
     for (let i = 0; i < info.length; i++) {
@@ -76,7 +67,7 @@ fetch(urlSearchMovies)
 
 
 
-//Aca se repite la historia, lo mismo que en peliculas solo que cambiamos el nombre de las varias y cambiamos la ruta del ENDPOINT, pero mantenemos ese valor dinamico para la clave de query que es lo que el usuario va a estar ingresando.
+// lo mismo que en peliculas solo que cambiamos el nombre de las variables y cambiamos la ruta del ENDPOINT, pero mantenemos ese valor dinamico para la clave de query que es lo que el usuario va a estar ingresando.
     let urlSearchTVS = `https://api.themoviedb.org/3/search/tv?api_key=4bcb2ca1395628db6221ba6939b8c9d7&language=en-US&page=1&query=${query}&include_adult=false`;
 
     fetch(urlSearchTVS)
@@ -115,8 +106,7 @@ fetch(urlSearchMovies)
         console.log(error);
     });
 
-    //Como pueden ver esta es la logica que maneja Search-Results. Me faltó hablar de las resctricciones del buscador, como por ejemplo que si escribis 3 letras no te busca o si no pones nada te avisa. Pero el resto lo pudimos ir viendo.
-
+//Si no carga o mientras carga la informacion que te trae el fetch a través del recurso endpoint hacemos un evento para mostrar un gif de carga//
     window.addEventListener("load", function () {
     let gifLoad = document.querySelector(".carga");
     gifLoad.style.display = "none";
