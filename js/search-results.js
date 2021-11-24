@@ -1,7 +1,7 @@
   //Validacion del formulario//
 
-  let formulario = document.querySelector(".buscadorHeader");
-  let inputField = document.querySelector("#buscadorHeaderInput");
+let formulario = document.querySelector(".buscadorHeader");
+let inputField = document.querySelector("#buscadorHeaderInput");
   
   formulario.addEventListener("submit", function (evento) {
     evento.preventDefault()
