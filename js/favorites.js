@@ -43,7 +43,7 @@ function buscarYMostrarFavoritosPeliculas(id){
             <article class="articulosIndex">
             <div class="contenedorImagen">
                 <a href="detail-movie.html?id=${data.id}">
-                    <img src= "https://image.tmdb.org/t/p/w185/${data.poster_path}" alt="">
+                    <img src= "https://image.tmdb.org/t/p/w342/${data.poster_path}" alt="">
                 </a>
             </div>
             <h3>${data.title}</h3>
@@ -103,7 +103,7 @@ function buscarYMostrarFavoritosPeliculas(id){
                                     <article class="articulosIndex">
                                     <div class="contenedorImagen">
                                         <a href="detail-series.html?id=${data.id}">
-                                            <img src= "https://image.tmdb.org/t/p/w185/${data.poster_path}" alt="">
+                                            <img src= "https://image.tmdb.org/t/p/w342/${data.poster_path}" alt="">
                                         </a>
                                     </div>
                                     <h3>${data.original_name}</h3>

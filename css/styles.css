@@ -2,277 +2,246 @@
 
 /* Estrategia: Mobile First*/
 
-
 /*Nota: El Viewport de 90% puede dar un mejor panorama de la página, esto lo hablamos con el profesor*/
 
-
 /*Ya lo corregimos en Home por las dudas*/
-
 
 /* CSS PARA EL INDEX-HOME Y PROPIEDADES GENERALES NECESARIAS*/
 
 * {
-    box-sizing: border-box;
-    font-family: "Open Sans", sans-serif;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
 }
 
 body {
-    background-color: rgb(26, 26, 26);
-    margin: 0 auto;
+  background-color: rgb(26, 26, 26);
+  margin: 0 auto;
 }
 
 ul {
-    padding: 0%;
-    margin: 0%;
+  padding: 0%;
+  margin: 0%;
 }
 
 li {
-    list-style-type: none;
+  list-style-type: none;
 }
 
 a {
-    text-decoration: none;
-    color: whitesmoke;
+  text-decoration: none;
+  color: whitesmoke;
 }
 
 .h4Detalles {
-    margin: 10px;
-    text-align: left;
-    color: white;
-    font-weight: 100;
+  margin: 10px;
+  text-align: left;
+  color: white;
+  font-weight: 100;
 }
 
 header {
-    background-color: rgb(0, 0, 0);
-    margin: 0%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+  background-color: rgb(0, 0, 0);
+  margin: 0%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 .contenedorTotalHeader {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    margin: 0%;
-    padding: 0%;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  margin: 0%;
+  padding: 0%;
 }
 
 .LogoHome {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .logoHome a {
-    width: 100%;
+  width: 100%;
 }
 
 .logo {
-    width: 100%;
-    margin: 0%;
+  width: 100%;
+  margin: 0%;
 }
 
 .buscadorHeader {
-    padding: 20px;
+  padding: 20px;
 }
 
 h3 {
-    margin: 0;
+  margin: 0;
 }
 
 #MainDelIndex h2 {
-    margin: 0;
-    text-align: center;
-    color: white;
-    font-weight: 400;
-    margin: 20px;
+  margin: 0;
+  text-align: center;
+  color: white;
+  font-weight: 400;
+  margin: 20px;
 }
 
 article h3,
 p {
-    text-align: center;
+  text-align: center;
 }
 
 .contenedorArticulos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
 }
 
 .contenedorArticulos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  display: block;
 }
-
 
 /*
 ESTO LO AGREGUÉ PAR JAVASCRIPT DE CADA CONTENEDOR PARA CADA SECTION
 */
 
 .contenedorArticulosPeliculas {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .contenedorArticulosSeriesPopulares {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .contenedorArticulosPelisTop {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    display: block;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
 }
 
 .contenedorArticulosDetallesGenero {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
-    justify-content: space-between;
-    padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 10px;
 }
 
 .articulosIndex {
-    background-color: black; 
-    color: white;
-    font-weight: 300;
-    border-radius: 7px;
-    margin: 5%;
-    width: 80%;
-    box-shadow: 5px 3px 20px 5px rgb(0 0 0);
-    
+  background-color: black;
+  color: white;
+  font-weight: 300;
+  border-radius: 7px;
+  margin: 5%;
+  width: 80%;
+  box-shadow: 5px 3px 20px 5px rgb(0 0 0);
 }
-.articulosIndex:hover{
-    opacity: 0.5;
-    transform:scale(0.9);
+.articulosIndex:hover {
+  opacity: 0.5;
+  transform: scale(0.9);
 }
 .contenedorImagen img {
-    width: 100%;
-    height: 100%;
-    cursor: pointer;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
 }
 
 .subtitulo {
-    margin: 20px;
-    text-align: center;
-    padding: 20px;
-    border: 2px solid red;
-    border-radius: 20px;
-    background-color: black;
+  margin: 20px;
+  text-align: center;
+  padding: 20px;
+  border: 2px solid red;
+  border-radius: 20px;
+  background-color: black;
 }
 
 .contenedorImagen img {
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-    box-shadow: 0px 8px 3px rgba(0, 0, 0, 0.5);
-    cursor: pointer;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  box-shadow: 0px 8px 3px rgba(0, 0, 0, 0.5);
+  cursor: pointer;
 }
 
 .main-footer {
-    background-color: red;
-    font-weight: bold;
-    color: whitesmoke;
-    display: flex;
-    height: 20vh;
-    justify-content: center;
-    align-items: center;
+  background-color: black;
+  font-weight: bold;
+  color: whitesmoke;
+  display: flex;
+  height: 30vh;
+  justify-content: center;
+  align-items: center;
+  border-top: 2px solid gray;
 }
 
 .listadoIndex {
-    text-align: center;
+  text-align: center;
 }
 
 .navegadorHeader ul li {
-    text-align: center;
+  text-align: center;
 }
-
 
 /* AQUI EMPIEZA LA SECCION CSS PARA DETAIL-MOVIE Y DETAIL SERIES */
 
 .cajaPelicula {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    margin: 40px;
-    align-items: center;
-    background-color: black;
-    border-radius: 50px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 40px;
+  align-items: center;
+  background-color: black;
+  border-radius: 50px;
 }
 
 .articuloPelicula {
-    width: 35%;
-    margin: 5px;
-    display: flex;
+  width: 35%;
+  margin: 5px;
+  display: flex;
 }
 
 .articuloPelicula img {
-    width: 100%;
-    display: flex;
-    justify-content: left;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
 }
 
 .listaPelicula {
+  font-size: 25px;
+  display: flex;
+  width: 60%;
+  color: whitesmoke;
+  text-align: center;
+}
+.listaSerie{
     font-size: 25px;
     display: flex;
     width: 60%;
     color: whitesmoke;
     text-align: center;
 }
-
 .listaPelicula ul {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    text-align: center;
-}
-
-.descripcionPelicula {
-    color: whitesmoke;
-    margin: 10px;
-    font-size: 40px;
-    text-align: justify;
-    border-radius: 20px;
-}
-
-.cajaSerie {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    flex-direction: column;
-    margin: 10px;
-}
-
-.articuloSerie {
-    width: 35%;
-    margin: 5px;
-}
-
-.articuloSerie img {
-    width: 90%;
-}
-
-.listaSerie {
-    display: flex;
-    width: 60%;
-    color: whitesmoke;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  font-size: 20px;
+  text-align: center;
 }
 
 .listaSerie ul {
@@ -280,368 +249,494 @@ ESTO LO AGREGUÉ PAR JAVASCRIPT DE CADA CONTENEDOR PARA CADA SECTION
     flex-direction: column;
     justify-content: center;
     text-align: center;
+    font-size: 20px;
+    text-align: center;
+  }
+
+.descripcionPelicula {
+  color: whitesmoke;
+  margin: 10px;
+  font-size: 40px;
+  text-align: justify;
+  border-radius: 20px;
+}
+
+.cajaSerie {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  margin: 40px;
+  align-items: center;
+  background-color: black;
+  border-radius: 50px;
+}
+
+.articuloSerie {
+  width: 35%;
+  margin: 5px;
+}
+
+.articuloSerie img {
+  width: 90%;
+}
+
+.listaSerie {
+  display: flex;
+  width: 60%;
+  color: whitesmoke;
+}
+
+.listaSerie ul {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
 }
 
 .descripcionSerie {
-    color: whitesmoke;
-    margin: 10px;
-    text-align: justify;
+  color: whitesmoke;
+  margin: 10px;
+  text-align: justify;
 }
 
 .subtitulosDetalles {
-    color: white;
-    font-size: 75px;
-    text-align: center;
-    margin: 5%;
+  color: white;
+  font-size: 15px;
+  text-align: center;
+  margin: 5%;
 }
 
+.subtitulosDetalles ul {
+  font-size: 20px;
+  color: white;
+}
 
 /* AQUI EMPIEZA LA SECCION CSS PARA GENEROS */
 
 .contenedorGenres {
-    
-    flex-direction: row;
-    flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
 
 .contenedorGenresSeries {
-    
-    flex-direction: row;
-    flex-wrap: wrap;
+  flex-direction: row;
+  flex-wrap: wrap;
 }
-.tituloGenres{
-    color: whitesmoke;
-    text-align: center;
+.tituloGenres {
+  color: whitesmoke;
+  text-align: center;
 }
-
 
 .articulosGenres {
-    padding: 5px;
-    border-radius: 20px;
-    border: 2px solid red;
-    text-align: center;
-    margin: 20px;
-    background-color: black;
-    
+  padding: 5px;
+  border-radius: 20px;
+  border: 2px solid red;
+  text-align: center;
+  margin: 20px;
+  background-color: black;
 }
 
 .titularGeneros {
-    text-align: center;
-    color: whitesmoke;
-    font-weight: 300;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: 300;
 }
-
 
 /* AQUI EMPIEZA LA SECCION CSS PARA FAVORITOS*/
 
 .contenedorArticulosFavoritos {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    flex-direction: row;
-  }
-  .contenedorArticulosFavoritosSeries {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    flex-direction: row;
-  }
-  .contenedorArticulosFavoritosPelicula {
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: column;
-    justify-content: space-between;
-    padding: 10px;
-    flex-direction: row;
-  }
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  padding: 10px;
+  flex-direction: row;
+}
+.contenedorArticulosFavoritosSeries {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: row;
+}
+.contenedorArticulosFavoritosPelicula {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 10px;
+  flex-direction: row;
+}
 
-
-
-  .listaPelicula{
-    font-size: 30px;
-  }
-
-  .descripcionPelicula{
-    font-size: 20px;
-  }
-
+.listaPelicula {
+  font-size: 30px;
+}
+.listaSerie{
+    font-size:30px;
+}
+.descripcionPelicula {
+  font-size: 20px;
+}
 
 h1#favoritosTitular {
-    text-align: center;
-    color: whitesmoke;
-    font-weight: 300;
+  text-align: center;
+  color: whitesmoke;
+  font-weight: 300;
 }
 
 #sinResultados {
-    display: none;
+  display: none;
 }
 
 #main-footerDos {
-    background-color: red;
-    font-weight: bold;
-    color: whitesmoke;
-    display: flex;
-    height: 20vh;
-    justify-content: center;
-    align-items: center;
-    margin: 500px 0px 0px 0px;
+  background-color: rgb(0, 0, 0);
+  font-weight: bold;
+  color: whitesmoke;
+  display: flex;
+  height: 20vh;
+  justify-content: center;
+  align-items: center;
+  margin: 125px 0px 0px 0px;
+  border-top: 2px solid white;
 }
 
-
 /*Sección de Media Queries en orden a la metodología Mobile First*/
-
 
 /*Media Querie de Tableta*/
 
 @media (min-width: 768px) {
-    /*Para la pagina de Index  versión tablet*/
-    .articulosIndex {
-        background-color: black;
-        color: white;
-        width: 35%;
-        margin: 20px;
-    }
-    .articulosIndex:hover{
-        opacity: 0.5;
-        transform:scale(1.1);
-    }
-    header {
-        display: flex;
-        flex-wrap: wrap;
-        margin: 0%;
-        background-color: black;
-    }
-    .logoHome {
-        width: 30%;
-        display: flex;
-    }
-    .logo {
-        width: 60%;
-        margin: 0%;
-    }
-    #segundoDiv {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: column;
-        width: 70%;
-    }
-    nav.navegadorHeader {
-        margin: 5px 0px;
-        display: flex;
-        width: 100%;
-    }
-    .navegadorHeader ul {
-        padding: 0%;
-        margin: 0%;
-        display: inline;
-    }
-    .navegadorHeader ul li {
-        display: inline;
-        margin: 0px 7px;
-        list-style-type: none;
-        padding: 0;
-        font-size: medium;
-    }
-    .buscadorHeader {
-        display: flex;
-        margin: 15px 0px;
-        justify-content: center;
-    }
-    .buscadorHeaderInput {
-        width: 90%;
-    }
-    .contenedorArticulos {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 10px;
-    }
-    .contenedorArticulosSeriesPopulares {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 10px;
-    }
-    .contenedorArticulosPelisTop {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 10px;
-    }
-    .contenedorArticulosPeliculas {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        margin: 10px;
-    }
-    /*Para la página de generos  version tablet*/
-    .contenedorGenres {
-        display: flex;
-        flex-direction: column;
-    }
-    .articulosGenres {
-        padding: 34px;
-    }
+  /*Para la pagina de Index  versión tablet*/
+  .buscadorHeaderInput {
+    width: 50%;
+  }
 
-    .contenedorPelisDetalle{
+  .articulosIndex {
+    background-color: black;
+    color: white;
+    width: 35%;
+    margin: 20px;
+  }
+  .articulosIndex:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  header {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0%;
+    background-color: black;
+  }
+  .logoHome {
+    width: 30%;
+    display: flex;
+  }
+  .logo {
+    width: 60%;
+    margin: 0%;
+  }
+  #segundoDiv {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    width: 70%;
+  }
+  nav.navegadorHeader {
+    margin: 5px 0px;
+    display: flex;
+    width: 100%;
+  }
+  .navegadorHeader ul {
+    padding: 0%;
+    margin: 0%;
+    display: inline;
+  }
+  .navegadorHeader ul li {
+    display: inline;
+    margin: 0px 7px;
+    list-style-type: none;
+    padding: 0;
+    font-size: medium;
+  }
+  .buscadorHeader {
+    display: flex;
+    margin: 15px 0px;
+    justify-content: center;
+  }
+  .buscadorHeaderInput {
+    width: 50%;
+  }
+  .contenedorArticulos {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .contenedorArticulosSeriesPopulares {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .contenedorArticulosPelisTop {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  .contenedorArticulosPeliculas {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin: 10px;
+  }
+  /*Para la página de generos  version tablet*/
+  .contenedorGenres {
+    display: flex;
+    flex-direction: column;
+  }
+  .articulosGenres {
+    padding: 34px;
+    display: flex;
+    text-align: center;
+  }
+
+  .contenedorPelisDetalle {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
-    }
-    .contenedorSeriesDetalle{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: center;
-        }
+  }
+  .contenedorSeriesDetalle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: center;
+  }
 
-    /*Para la página de Favoritos version tablet*/
-    .contenedorArticulosFavoritos {
-        padding: 10px; 
-        flex-direction: row;
-    }
-    .contenedorArticulosFavoritosSeries {
-        padding: 10px; 
-        flex-direction: row;
-    }
-    .contenedorArticulosFavoritosPelicula {
-        padding: 10px; 
-        flex-direction: row;
-    }
+  /*Para la página de Favoritos version tablet*/
+  .contenedorArticulosFavoritos {
+    padding: 10px;
+    flex-direction: row;
+  }
+  .contenedorArticulosFavoritosSeries {
+    padding: 10px;
+    flex-direction: row;
+  }
+  .contenedorArticulosFavoritosPelicula {
+    padding: 10px;
+    flex-direction: row;
+  }
 
+  .listaPelicula {
+    font-size: 40px;
+    justify-content: center;
+  }
+  .listaSerie {
+    font-size: 40px;
+    justify-content: center;
+  }
 
-
-    .listaPelicula {
-        font-size: 40px;
-    }
-    .listaSerie {
-        font-size: 40px;
-    }
+  .logoTMDB {
+    width: 25%;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .logoTMDB img {
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+  }
 }
-
 
 /*Media Querie de Computador*/
 
 @media (min-width: 1024px) {
-    /*pagina de index  version pc*/
-    .articulosIndex {
-        background-color: black;
-        color: white;
-        width: 15%;
-    }
-    .articulosIndex:hover{
-        opacity: 0.5;
-        transform:scale(1.1);
-    }
-    .logo {
-        width: 50%;
-        margin: 0%;
-    }
-    .logoHome {
-        width: 30%;
-        display: flex;
-    }
-    .articulosDeNav {
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        width: 70%;
-        margin: 0%;
-    }
-    .articulosDeNav ul {
-        width: 100%;
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        justify-content: space-between;
-        margin-bottom: 5px;
-    }
-    .articulosDeNav li {
-        text-align: center;
-        width: 20%;
-    }
-    .articulosDeNav a {
-        display: inline-block;
-        color: whitesmoke;
-        width: 100%;
-        text-transform: uppercase;
-        padding: 5px 0;
-    }
-    .contenedorArticulosDetallesGenero {
-        justify-content: flex-start;
-        padding: 10px;
-    }
-    .navegadorHeader {
-        display: flex;
-        justify-content: center;
-        margin: 20px;
-        padding: 25px;
-    }
-    main {
-        margin: 20px;
-    }
-    /*pagina de detalle de peliculas version pc*/
-    /*pagina de generos version pc*/
-    .contenedorGenres {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .contenedorGenresSeries {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: center;
-    }
-    .articulosGenres {
-        padding: 25.5px;
-        width: 20%;
-    }
+  /*pagina de index  version pc*/
 
-    .contenedorPelisDetalle{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row;
-        
-    }
-    .contenedorSeriesDetalle{
-        display: flex;
-        flex-wrap: wrap;
-        flex-direction: row; 
-        
-    }
+  .buscadorHeaderInput {
+    width: 50%;
+  }
+  .articulosIndex {
+    background-color: black;
+    color: white;
+    width: 15%;
+  }
+  .articulosIndex:hover {
+    opacity: 0.5;
+    transform: scale(1.1);
+  }
+  .logo {
+    width: 50%;
+    margin: 0%;
+  }
+  .logoHome {
+    width: 30%;
+    display: flex;
+  }
+  .articulosDeNav {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    width: 70%;
+    margin: 0%;
+  }
+  .articulosDeNav ul {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 5px;
+  }
+  .articulosDeNav li {
+    text-align: center;
+    width: 20%;
+  }
+  .articulosDeNav a {
+    display: inline-block;
+    color: whitesmoke;
+    width: 100%;
+    text-transform: uppercase;
+    padding: 5px 0;
+  }
+  .contenedorArticulosDetallesGenero {
+    justify-content: flex-start;
+    padding: 10px;
+  }
+  .navegadorHeader {
+    display: flex;
+    justify-content: center;
+    margin: 20px;
+    padding: 25px;
+  }
+  main {
+    margin: 20px;
+  }
+  /*pagina de detalle de peliculas version pc*/
+  /*pagina de generos version pc*/
+  .contenedorGenres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .contenedorGenresSeries {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  .articulosGenres {
+    padding: 25.5px;
+    width: 25%;
+    display: flex;
+  }
 
-    .tituloGenres{
-        color: whitesmoke;
-        text-align: left;
-    }
-    /*pagina de favoritos version pc*/
-    .contenedorArticulosFavoritos {
-        padding: 10px;
-        flex-direction: row;
-    }
-    .contenedorArticulosFavoritosSeries {
-        padding: 10px;
-        flex-direction: row;
-    }
-    .contenedorArticulosFavoritosPelicula {
-        padding: 10px;
-        flex-direction: row;
-    }
-    .listaPelicula {
-        font-size: 40px;
-    }
-    .listaSerie {
-        font-size: 40px;
-    }
+  .contenedorPelisDetalle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+  .contenedorSeriesDetalle {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+  }
+
+  .tituloGenres {
+    color: whitesmoke;
+    text-align: left;
+  }
+  /*pagina de favoritos version pc*/
+  .contenedorArticulosFavoritos {
+    padding: 10px;
+    flex-direction: row;
+  }
+  .contenedorArticulosFavoritosSeries {
+    padding: 10px;
+    flex-direction: row;
+  }
+  .contenedorArticulosFavoritosPelicula {
+    padding: 10px;
+    flex-direction: row;
+  }
+  .listaPelicula {
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+  }
+  .listaPelicula ul {
+    justify-content: center;
+  }
+  .listaSerie {
+    font-size: 40px;
+    text-align: center;
+    justify-content: center;
+  }
+  .listaSerie ul {
+    justify-content: center;
+  }
+  .logoTMDB {
+    width: 25%;
+    justify-content: center;
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+
+  .logoTMDB img {
+    padding: 20px;
+    flex-wrap: wrap;
+    display: flex;
+  }
+  .subtitulosDetalles {
+    font-size: 50px;
+  }
+}
+
+.logoTMDB {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 20px;
+}
+
+.logoTMDB img {
+  padding: 20px;
+  flex-wrap: wrap;
+  display: flex;
+}
+
+.searchMovies {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.searchTVS {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+
+#mainDelIndex section{
+    justify-content: center;
+  }
+.carga {
+  text-align: center;
+}
+
+.sinopsis {
+  color: white;
+  border-bottom: 2px solid white;
+  border-top: 2px solid white;
+  font-size: 20px;
+  text-align: center;
 }
